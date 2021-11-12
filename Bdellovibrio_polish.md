@@ -11,18 +11,19 @@
 * Genome polishing
   * Genome assembly from previous long read sequencing result was polished with short reads
   * Genome polishing was done by *Pilon*
+  * Genome completeness (BUSCO) of polished genomes increased comparable to reference genome
 
 * Gene annotation
   * Gene annotation was done by *Prodigal*
   * Functional annotation were done by comparining genes to reference genome's annotation
   * *BLASTP* was performed between reference and WT/KnR proteins, WT/KnR proteins with over 99% percent identitiy to reference genes were annotated with reference gene's function
 
-Feature | Reference | WT | WT polished | KnR | KnR polished
+Feature | Reference | WT | **WT polished** | KnR | **KnR polished**
 ---- | ---- | ---- | ---- | ---- | ----
-Total assembly length | 3,830,427 | 3,836,685 | 3,837,019 | 3,836,591 | 3,836,926
+Total genome length (nt) | 3,830,427 | 3,836,685 | 3,837,019 | 3,836,591 | 3,836,926
 Number of contigs | 1 | 1 | 1 | 1 | 1
-Number of genes | 3,606 | 3,632 | 3,766 | 3,636
-Genome completeness (*BUSCO*) | 96.0% | 95.2% | 96.0% | 92.7% | 96.0%
+Number of protein-coding genes | 3,606 | 3,727 | 3,632 | 3,766 | 3,636
+Genome completeness (*BUSCO*) | 96.0% | 95.2% | **96.0%** | 92.7% | **96.0%**
 
 ![](./plot/heatmap.png)
 
@@ -38,3 +39,5 @@ Genome completeness (*BUSCO*) | 96.0% | 95.2% | 96.0% | 92.7% | 96.0%
   * Variant information was reported from nucmer result by show-snps script
   * show-snps result was converted to vcf extension file
   * VCF file can be opened by *IGV* genome browser
+
+![](./plot/venn_diagram.png)
