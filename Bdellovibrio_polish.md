@@ -24,6 +24,12 @@ Number of contigs | 1 | 1 | 1 | 1 | 1
 Number of genes | 3,606 | 3,632 | 3,766 | 3,636
 Genome completeness (*BUSCO*) | 96.0% | 95.2% | 96.0% | 92.7% | 96.0%
 
+![](./plot/heatmap.png)
+
+* Similarity comparison between genomes
+  * Average nucleotide identity (ANI) was calculated between genomes with *pyani*
+  * Numbers inside the box is ANI * 10,000 (10,000 when 100% identical)
+
 ### Variant calling
 
 * Variant calling
