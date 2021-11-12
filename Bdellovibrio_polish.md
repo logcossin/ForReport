@@ -44,8 +44,8 @@ Genome completeness (*BUSCO*) | 96.0% | 95.2% | **96.0%** | 92.7% | **96.0%**
 
 * Variant comparison
   * Variant calling result before polishing were compared with result after polishing
+  * Variants only found in unpolished genomes are likely to be sequencing errors corrected by short read polishing
   * From total of 755 variants between NCBI reference genome and unpolished WT strain genome, 430 variants were also found between reference genome and polished WT strain genome
   * 325 variants were only found in unpolished WT strain genome, and 3 variants were only found in polished WT strain genome
   * From total of 911 variants between NCBI reference genome and unpolished KnR strain genome, 426 variants were also found between reference genome and polished KnR strain genome
   * 485 variants were only found in unpolished KnR strain genome, and 299 variants were only found in polished KnR strain genome
-  * Variants only found in unpolished genomes are likely to be sequencing errors corrected by short read polishing
