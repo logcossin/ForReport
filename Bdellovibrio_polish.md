@@ -18,12 +18,11 @@
   * *BLASTP* was performed between reference and WT/KnR proteins, WT/KnR proteins with over 99% percent identitiy to reference genes were annotated with reference gene's function
 
 Feature | Reference | WT | WT polished | KnR | KnR polished
----- | ---- | ---- | ----
-Total assembly length | 3,830,427 | 3,836,685 | 3,836,591
-Number of contigs | 1 | 1 | 1
-GC ratio | 50.65% | 50.65% | 50.65%
+---- | ---- | ---- | ---- | ---- | ----
+Total assembly length | 3,830,427 | 3,836,685 | 3,837,019 | 3,836,591 | 3,836,926
+Number of contigs | 1 | 1 | 1 | 1 | 1
 Number of genes | 3,647 | 3,727 | 3,766
-Genome completeness (*BUSCO*) | 96.0% | 95.2% | 92.7%
+Genome completeness (*BUSCO*) | 96.0% | 95.2% | 96.0% | 92.7% | 96.0%
 
 ### Variant calling
 
