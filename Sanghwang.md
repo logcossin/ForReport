@@ -16,7 +16,7 @@
 ## 장수상황버섯
 
 * 장수상황버섯은 gDNA read data는 확인되지 않고 RNA-seq read data만 /flareon/analysis2/Goryo_mushroom/reads_Jangsu에 존재함.
-* gDNA-seq data는 (구) mbn server HDD에 있을 것으로 추정됨.
 * genome sequence directory: /flareon/analysis2/Goryo_mushroom/circos
 
 * BUSCO 분석 결과 contamination (duplication)은 8.8%로 연구실에서 보유중인 장수상황버섯 균주는 diploid로 추정됨.
+* gDNA read data 확보 시 GenomeScope 분석 진행 예정.
