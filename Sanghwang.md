@@ -10,8 +10,8 @@
 
 ![](linear_plot.png)
 
-* GenomeScope 분석 결과 확인되는 peak가 1개로 연구실에서 보유중인 고려상황버섯 균주는 haploid로 추정됨.
 * BUSCO 분석 결과 contamination (duplication)은 1.1%로 확인됨.
+* 추가로 GenomeScope 분석 결과 확인되는 peak가 1개로 연구실에서 보유중인 고려상황버섯 균주는 haploid로 추정됨.
 
 ## 장수상황버섯
 
