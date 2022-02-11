@@ -5,10 +5,10 @@
 
 ## 고려상황버섯
 
-* gDNA read sequence directory: /flareon/analysis2/Goryo_mushroom/reads_genome
+* gDNA read data directory: /flareon/analysis2/Goryo_mushroom/reads_genome
 * genome sequence directory: /flareon/analysis2/Goryo_mushroom/circos
 
-![](linear_plot.png)
+![](./plot/goryeo.png)
 
 * BUSCO 분석 결과 contamination (duplication)은 1.1%로 확인됨.
 * 추가로 GenomeScope 분석 결과 확인되는 peak가 1개로 연구실에서 보유중인 고려상황버섯 균주는 haploid로 추정됨.
@@ -20,3 +20,12 @@
 
 * BUSCO 분석 결과 contamination (duplication)은 8.8%로 연구실에서 보유중인 장수상황버섯 균주는 diploid로 추정됨.
 * gDNA read data 확보 시 GenomeScope 분석 진행 예정.
+
+----
+
+* gDNA read data directory: /flareon/analysis2/Goryo_mushroom/reads_Jangsu
+* 306호에서 보관 중인 mbn server HDD에서 장수상황버섯 gDNA read data를 flareon으로 옮겨 GenomeScope 분석을 진행함.
+
+![](./plot/jangsu.png)
+
+* GenomeScope plot에서 peak가 2개로 연구실에서 보유중인 장수상황버섯 균주는 diploid로 예상됨.
