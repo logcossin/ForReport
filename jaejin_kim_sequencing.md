@@ -37,6 +37,7 @@ GC ratio (%) | 63.30 | 68.12
 
 ## Species evaluation
 
-* 
+* 16S rRNA sequence was identified from the genome sequence using Rfam database (v14.7) and Infernal v1.1.2
+  * Command: `cmscan --cut_ga --rfam --nohmmonly --tblout --fmt 2`
 
 
