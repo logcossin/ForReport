@@ -32,8 +32,11 @@ GC ratio (%) | 63.30 | 68.12
 * Genome completeness analysis with BUSCO v5.3.1
 * sphingomonadales_odb10 for _Sphingomicrobium_, oceanospirillales_odb10 for _Halomonas_
 
-* _Sphingomicrobium_ sp. GRR-S6-50 completeness: C:92.3%[S:92.0%,D:0.3%],F:0.4%,M:7.3%,n:1018	
-* _Halomonas_ sp. YJPS3-2 completeness: C:99.8%[S:99.8%,D:0.0%],F:0.2%,M:0.0%,n:619
+Database | _Sphingomicrobium_ sp. GRR-S6-50 | _Halomonas_ sp. YJPS3-2
+---- | ---- | ----
+bacteria | 100% | 99.2%
+Class level | 97.9% | 99.7%
+Order level | 92.3% | 99.8%
 
 ## Species evaluation
 
