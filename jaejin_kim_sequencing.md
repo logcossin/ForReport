@@ -5,8 +5,6 @@
 * NS01: _Sphingomicrobium_ sp. GRR-S6-50
 * NS02: _Halomonas_ sp. YJPS3-2
 
-균주의 genus 정보는 김재진 교수님 연구실 유연재 학생을 통해 받음.
-
 ## Sequencing summary
 
 Statistics | _Sphingomicrobium_ sp. GRR-S6-50 | _Halomonas_ sp. YJPS3-2
@@ -23,26 +21,24 @@ Statistics | _Sphingomicrobium_ sp. GRR-S6-50 | _Halomonas_ sp. YJPS3-2
 ---- | ---- | ----
 Total assembly length (bp) | 2,333,284 | 3,662,638
 Number of scaffolds | 4 | 25
-N50 (bp) | 2,321,309 | 427,846
-L50 | 1 | 3
+Scaffold N50 (bp) | 2,321,309 | 427,846
+Scaffold L50 | 1 | 3
 GC ratio (%) | 63.30 | 68.12
 
 ## Assembly evaluation
 
 * Genome completeness analysis with BUSCO v5.3.1
-* sphingomonadales_odb10 for _Sphingomicrobium_, oceanospirillales_odb10 for _Halomonas_
+* Used lineage database is bacteria_odb10
 
 Database | _Sphingomicrobium_ sp. GRR-S6-50 | _Halomonas_ sp. YJPS3-2
 ---- | ---- | ----
-bacteria | 100% | 99.2%
-Class level | 97.9% | 99.7%
-Order level | 92.3% | 99.8%
+bacteria_odb10 | 100% | 99.2%
 
 ## Species evaluation
 
 * 16S rRNA sequence was identified from the genome sequence using Rfam database (v14.7) and Infernal v1.1.2
-  * Command: `cmscan --cut_ga --rfam --nohmmonly --tblout --fmt 2`
-* Identified 16S rRNA sequence aligned against 16S rRNA database with NCBI web-BLAST
+  * Parameters: `cmscan --cut_ga --rfam --nohmmonly --tblout --fmt 2 --clanin Rfam.clanin Rfam.cm`
+* Identified 16S rRNA sequence aligned against NCBI 16S rRNA database with NCBI web-BLAST
 
 ### _Sphingomicrobium_
 
