@@ -38,15 +38,16 @@ bacteria_odb10 | 100% | 99.2%
 
 * 16S rRNA sequence was identified from the genome sequence using Rfam database (v14.7) and Infernal v1.1.2
   * Parameters: `cmscan --cut_ga --rfam --nohmmonly --tblout --fmt 2 --clanin Rfam.clanin Rfam.cm`
-* Identified 16S rRNA sequence aligned against NCBI 16S rRNA database with NCBI web-BLAST
+* Identified 16S rRNA sequence aligned against NCBI 16S rRNA database with NCBI [web-BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi)
 
 ### _Sphingomicrobium_
 
 * Alignment with highest identity was to 16S rRNA of _Sphingomicrobium astaxanthinifaciens_ but genome sequence was not available.
 * There is only 2 genomes from genus _Sphingomicrobium_ in NCBI.
-* _Sphingomicrobium_ sp. GRR-S6-50 showed about 75% ANI with 2 genomes from NCBI.
+* _Sphingomicrobium_ sp. GRR-S6-50 showed about 75% ANI with 2 _Sphingomicrobium_ genomes from NCBI.
+* _Sphingomicrobium_ sp. GRR-S6-50 showed 71~74% ANI with 44 Sphingomonadaceae (family) reference complete genomes from NCBI.
 
 ### _Halomonas_
 
 * Alignment with highest identity was to 16S rRNA of _Halomonas salina_ but genome sequence was not available.
-* ANI score between _Halomonas_ sp. YJPS3-2 and _Halomonas halophila_ NBRC102604 (second higest identity) was about 91%
+* ANI score between _Halomonas_ sp. YJPS3-2 and _Halomonas halophila_ NBRC102604 (second higest identity) was about 91%.
