@@ -25,14 +25,22 @@ Scaffold N50 (bp) | 2,321,309 | 427,846
 Scaffold L50 | 1 | 3
 GC ratio (%) | 63.30 | 68.12
 
-## Genome completeness evaluation
+## Genome qaulity evaluation
 
-* Genome completeness analysis with BUSCO v5.3.1
+* Genome completeness assession with BUSCO v5.3.1
 * Used lineage database is bacteria_odb10
 
 Database | _Sphingomicrobium_ sp. GRR-S6-50 | _Halomonas_ sp. YJPS3-2
 ---- | ---- | ----
 bacteria_odb10 | 100% | 99.2%
+
+* Genome contamination assession with CheckM v1.1.3
+
+Feature | _Sphingomicrobium_ sp. GRR-S6-50 | _Halomonas_ sp. YJPS3-2
+---- | ---- | ----
+Marker lineage | c__Alphaproteobacteria (UID3305) | c__Gammaproteobacteria (UID4444)
+Completeness | 99.48 | 99.93
+Contamination | 1.23 | 0.48
 
 ## 16S rRNA sequence based species evaluation
 
@@ -51,5 +59,3 @@ bacteria_odb10 | 100% | 99.2%
 
 * Alignment with highest identity was to 16S rRNA of _Halomonas salina_ but genome sequence was not available.
 * ANI score between _Halomonas_ sp. YJPS3-2 and _Halomonas halophila_ NBRC102604 (second higest identity) was about 91%.
-
-## Contamination check
