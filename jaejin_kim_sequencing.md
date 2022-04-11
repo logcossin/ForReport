@@ -34,7 +34,7 @@ Database | _Sphingomicrobium_ sp. GRR-S6-50 | _Halomonas_ sp. YJPS3-2
 ---- | ---- | ----
 bacteria_odb10 | 100% | 99.2%
 
-## 16S sequence based species evaluation
+## 16S rRNA sequence based species evaluation
 
 * 16S rRNA sequence was identified from the genome sequence using Rfam database (v14.7) and Infernal v1.1.2
   * Parameters: `cmscan --cut_ga --rfam --nohmmonly --tblout --fmt 2 --clanin Rfam.clanin Rfam.cm`
@@ -51,3 +51,5 @@ bacteria_odb10 | 100% | 99.2%
 
 * Alignment with highest identity was to 16S rRNA of _Halomonas salina_ but genome sequence was not available.
 * ANI score between _Halomonas_ sp. YJPS3-2 and _Halomonas halophila_ NBRC102604 (second higest identity) was about 91%.
+
+## Contamination check
