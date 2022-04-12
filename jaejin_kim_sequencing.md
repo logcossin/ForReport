@@ -52,7 +52,7 @@ Contamination | 1.23 | 0.48
 
 * Alignment with highest identity was to 16S rRNA of _Sphingomicrobium astaxanthinifaciens_ but genome sequence was not available.
 * There is only 2 genomes from genus _Sphingomicrobium_ in NCBI.
-* _Sphingomicrobium_ sp. GRR-S6-50 showed about 75% ANI with 2 _Sphingomicrobium_ genomes from NCBI.
+* _Sphingomicrobium_ sp. GRR-S6-50 showed about 75% ANI with 2 _Sphingomicrobium_ genomes from NCBI. (RefSeq accession)
 * _Sphingomicrobium_ sp. GRR-S6-50 showed 71~74% ANI with 44 Sphingomonadaceae (family) reference complete genomes from NCBI.
 
 ### _Halomonas_ sp. YJPS3-2
