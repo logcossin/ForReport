@@ -21,6 +21,7 @@ Statistics | _Sphingomicrobium_ sp. GRR-S6-50 | _Halomonas_ sp. YJPS3-2
 ---- | ---- | ----
 Total assembly length (bp) | 2,333,284 | 3,662,638
 Number of scaffolds | 4 | 25
+Longest scaffold (bp) | 2,321,309 | 539,688
 Scaffold N50 (bp) | 2,321,309 | 427,846
 Scaffold L50 | 1 | 3
 GC ratio (%) | 63.30 | 68.12
