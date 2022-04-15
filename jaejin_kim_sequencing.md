@@ -1,6 +1,6 @@
-# 김재진 교수님 신종 균주 assembly
+# gDNA sequencing summary for Prof. Jae-Jin Kim
 
-총 2종의 균주에 대해 sequencing을 진행함.
+gDNA sequencing was performed with Illumina Miseq platform.
 
 * NS01: _Sphingomicrobium_ sp. GRR-S6-50
 * NS02: _Halomonas_ sp. YJPS3-2
@@ -59,3 +59,8 @@ Contamination | 1.23 | 0.48
 * Alignment with 16S rRNA sequence of _Halomonas salina_ showed highest identity but genome sequence was not available.
 * _Halomonas_ sp. YJPS3-2 showed 72.5~91.4% ANI with 94 _Halomonas_ reference genomes from NCBI.
 * ANI between _Halomonas_ sp. YJPS3-2 and _Halomonas halophila_ NBRC102604 (second higest rRNA sequence identity) was about 91%.
+
+## Credit
+
+* Library preparation, sequencing: Xiaoyue Xu
+* Genome assembly, QC: Bogun Kim
