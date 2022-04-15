@@ -48,6 +48,7 @@ Contamination | 1.23 | 0.48
 * 16S rRNA sequence was identified from the genome sequence using Rfam database (v14.7) and Infernal v1.1.2
   * Parameters: `cmscan --cut_ga --rfam --nohmmonly --tblout --fmt 2 --clanin Rfam.clanin Rfam.cm`
 * Identified 16S rRNA sequence aligned against NCBI 16S rRNA database with NCBI [web-BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi)
+* [ANI raw data](./rawdata/ANI_analysis_rawdata.zip) in excel format.
 
 ### _Sphingomicrobium_ sp. GRR-S6-50
 
