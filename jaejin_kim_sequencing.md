@@ -50,12 +50,12 @@ Contamination | 1.23 | 0.48
 
 ### _Sphingomicrobium_ sp. GRR-S6-50
 
-* Alignment with highest identity was to 16S rRNA of _Sphingomicrobium astaxanthinifaciens_ but genome sequence was not available.
-* There is only 2 genomes from genus _Sphingomicrobium_ in NCBI.
-* _Sphingomicrobium_ sp. GRR-S6-50 showed about 75% ANI with 2 _Sphingomicrobium_ genomes from NCBI. (RefSeq accession)
-* _Sphingomicrobium_ sp. GRR-S6-50 showed 71~74% ANI with 44 Sphingomonadaceae (family) reference complete genomes from NCBI.
+* Alignment with 16S rRNA sequence of _Sphingomicrobium astaxanthinifaciens_ showed highest identity but genome sequence was not available.
+* _Sphingomicrobium_ sp. GRR-S6-50 showed about 75% Average Nucleotide Identity (ANI) with 2 _Sphingomicrobium_ genomes from NCBI. (GCF_014195685.1, GCF_019264355.1)
+* _Sphingomicrobium_ sp. GRR-S6-50 showed 71~74% ANI with 44 Sphingomonadaceae (family) complete reference genomes from NCBI.
 
 ### _Halomonas_ sp. YJPS3-2
 
-* Alignment with highest identity was to 16S rRNA of _Halomonas salina_ but genome sequence was not available.
-* ANI score between _Halomonas_ sp. YJPS3-2 and _Halomonas halophila_ NBRC102604 (second higest identity) was about 91%.
+* Alignment with 16S rRNA sequence of _Halomonas salina_ showed highest identity but genome sequence was not available.
+* _Halomonas_ sp. YJPS3-2 showed 72.5~91.4% ANI with 94 _Halomonas_ reference genomes from NCBI.
+* ANI between _Halomonas_ sp. YJPS3-2 and _Halomonas halophila_ NBRC102604 (second higest rRNA sequence identity) was about 91%.
