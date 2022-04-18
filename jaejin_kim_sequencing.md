@@ -26,7 +26,7 @@ Scaffold N50 (bp) | 2,321,309 | 427,846
 Scaffold L50 | 1 | 3
 GC ratio (%) | 63.30 | 68.12
 
-## Genome qaulity evaluation
+## Genome quality evaluation
 
 * Genome completeness assession with BUSCO v5.3.1
 * Used lineage database is bacteria_odb10
