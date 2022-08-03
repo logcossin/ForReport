@@ -54,7 +54,7 @@ Complete, duplicated (%) | 2.4 | 0.8 | 1.6 | 87.1 | 1.6 | 0.8
 
 * Sample 38번의 duplicated BUSCO 비율 87%로 contamination이 의심됨.
 
-![](../figure/lacto_ani.png)
+![](./plot/lacto_ani.png)
 
 * Sequencing을 진행한 probiotics 5종의 NCBI RefSeq reference genome을 포함하여 ANI 분석 결과 sample 38번은 _L. plantarum_ 과 _L. fermentum_ 의 mixture로 추정됨.
 * Sample 9번은 _L. curvatus_ 가 아니라 _L. fermentum_ sample이 잘못 온 것으로 추정됨. Contamination은 없었음. Miseq short read만을 사용한 assembly은 _L. curvatus_ 로 확인되었음.
@@ -100,7 +100,7 @@ BUSCO (%) | 98.4 | 98.4 | 99.2 | 100 | 100 | 98.4
 * Aromatic amino acid 생합성 관련 유전자
 * NCBI reference sequence 대비 start codon upstream으로 약 100 aa 정도가 짧음
 
-![](../figure/20_1.png)
+![](./plot/20_1.png)
 
 * Start codon 인근에서 deletion으로 frame shift가 일어남
 * Miseq read alignment에서는 deletion된 base가 확인되지 않음
@@ -110,7 +110,7 @@ BUSCO (%) | 98.4 | 98.4 | 99.2 | 100 | 100 | 98.4
 
 * NCBI reference sequence 대비 start codon upstream으로 약 35 aa 정도가 짧음
 
-![](../figure/20_2.png)
+![](./plot/20_2.png)
 
 * Upstream에서 start codon ATG가 GTG로 바뀌는 point mutation을 확인
 * GTG는 bacterial alternative start codon 중 하나임
@@ -141,7 +141,7 @@ BUSCO (%) | 98.4 | 98.4 | 99.2 | 100 | 100 | 98.4
 * Coenzyme A (CoA) 생합성 관련 유전자 (coaC)
 * OrthoDB의 bacterial coaC의 median length는 403 aa, _Enterococcus_ 의 coaC median length는 249 aa
 
-![](../figure/54_1.png)
+![](./plot/54_1.png)
 
 * _E. faecium_ 의 coaC는 183 aa으로 길이가 더 짧기 때문에 BUSCO가 fragmented sequence로 판단했다고 추정됨
 
@@ -149,7 +149,7 @@ BUSCO (%) | 98.4 | 98.4 | 99.2 | 100 | 100 | 98.4
 
 * NCBI reference sequence 대비 start codon upstream으로 30 aa 정도가 짧음
 
-![](../figure/54_2.png)
+![](./plot/54_2.png)
 
 * Upstream start codon에서 ATG가 ATC로 바뀌는 point mutation을 확인
 * _E. coli_ 에서 낮은 확률로 ATC(AUC)가 alternative start codon으로 사용된다는 연구 결과가 있음. [논문](https://doi.org/10.1093/nar/gkx070)
