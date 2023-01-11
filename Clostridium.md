@@ -4,6 +4,8 @@
 
 * [breseq Github Link](https://github.com/barricklab/breseq)
 * [Variant calling with BCFtools](https://samtools.github.io/bcftools/howtos/variant-calling.html)
+* breseq version: 0.37.1
+* BCFtools and htslib version: 1.15.1
 * `bcftools mpileup -d 1000000 -L 1000000 --threads 20 -f Clostridium_JS66.fasta -O u *.bam | bcftools call -mv -O b --ploidy 1 -o calls.bcf`
 * `bcftools filter -i '%QUAL>=200 && INFO/DP>=100' -O v calls.bcf > calls_filter.vcf`
 
