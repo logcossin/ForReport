@@ -28,4 +28,6 @@
 * Original protein sequence (601 amino acids) was split into two at position 213.
 * First protein fragment contains the Ferredoxin family domain.
 * Second protein fragment contains the NADH:ubiquinone oxidoreductase domain.
-* Split protein might be fully functional or only the Ferredoxin domain could be functional
+* Two possible scenarios for the gene's function:
+  1. Split protein is fully functional as original NADH reductase gene
+  2. Only the Ferredoxin domain is functional
