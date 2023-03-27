@@ -1,6 +1,6 @@
 # gDNA sequencing summary for Prof. Jae-Jin Kim
 
-gDNA sequencing was performed with Oxford Nanopore MinION platform.
+gDNA sequencing was performed with Illumina Miseq platform.
 
 * Library preparation, sequencing: Xiaoyue Xu
 * Genome assembly, QC: Bogun Kim
@@ -50,3 +50,14 @@ Contamination | 1.23 | 0.48
 * Identified 16S rRNA sequence aligned against NCBI 16S rRNA database with NCBI [web-BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi)
 * [ANI raw data](./rawdata/ANI_analysis_rawdata.zip) in excel format.
 
+### _Sphingomicrobium_ sp. GRR-S6-50
+
+* Alignment with 16S rRNA sequence of _Sphingomicrobium astaxanthinifaciens_ showed highest identity but genome sequence was not available.
+* _Sphingomicrobium_ sp. GRR-S6-50 showed about 75% Average Nucleotide Identity (ANI) with 2 _Sphingomicrobium_ genomes from NCBI. (GCF_014195685.1, GCF_019264355.1)
+* _Sphingomicrobium_ sp. GRR-S6-50 showed 71~74% ANI with 44 Sphingomonadaceae (family) complete reference genomes from NCBI.
+
+### _Halomonas_ sp. YJPS3-2
+
+* Alignment with 16S rRNA sequence of _Halomonas salina_ showed highest identity but genome sequence was not available.
+* _Halomonas_ sp. YJPS3-2 showed 72.5~91.4% ANI with 94 _Halomonas_ reference genomes from NCBI.
+* ANI between _Halomonas_ sp. YJPS3-2 and _Halomonas halophila_ NBRC102604 (second higest rRNA sequence identity) was about 91%.
