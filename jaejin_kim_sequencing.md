@@ -33,7 +33,7 @@ Genome completeness (%) | 92.7 | 90.3 | 96.0
 
 * 16S rRNA sequence was identified from the genome sequence using [barrnap](https://github.com/tseemann/barrnap) v0.9 with default parameters.
 * Identified 16S rRNA sequence aligned against NCBI 16S rRNA database with NCBI [web-BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi)
-* 
+
 ### YJP1-3
 
 * Alignment with 16S rRNA sequence of _Leeuwenhoekiella aestuarii_, _Cellulophaga algicola_, and _Leeuwenhoekiella nanhaiensis_ showed the TOP3 highest identity but sequence identity were all around 90%.
