@@ -7,57 +7,41 @@ gDNA sequencing was performed with Illumina Miseq platform.
 
 ## Sequencing summary
 
-Statistics | _Sphingomicrobium_ sp. GRR-S6-50 | _Halomonas_ sp. YJPS3-2
----- | ---- | ----
-Total number of read pairs | 639,940 | 2,693,618
-Total number of bases (Mbp) | 333.81 | 1,461.91
+Statistics | YJP1-3 | GRR-S3-23 | GRR-SB-33
+---- | ---- | ---- | ----
+Total number of reads | 15,382 | 69,870 | 23,404
+Total number of bases (Mbp) | 311.7 | 647.7 | 492.8
+Mean read length (bp) | 20,263.5 | 9,270.0 | 21,054.8
+Mean read quality score | 13.8 | 14.6 | 13.9
 
 ## Assembly summary
 
-* Adapter trimmed with TrimGalore v0.6.6 with `--paired` option.
-* Trimmed reads were assembled with SPAdes genome assembler v3.15.3 with `--isolate --cov-cutoff auto` parameters.
-
-Statistics | _Sphingomicrobium_ sp. GRR-S6-50 | _Halomonas_ sp. YJPS3-2
----- | ---- | ----
-Total assembly length (bp) | 2,333,284 | 3,662,638
-Number of scaffolds | 4 | 25
-Longest scaffold (bp) | 2,321,309 | 539,688
-Scaffold N50 (bp) | 2,321,309 | 427,846
-Scaffold L50 | 1 | 3
-GC ratio (%) | 63.30 | 68.12
-
-## Genome quality evaluation
-
+* Reads were assembled with [Flye genome assembler](https://github.com/fenderglass/Flye) v2.9.2 with `--nano-hq --iterations 2` parameters.
 * Genome completeness assession with BUSCO v5.3.1
 * Used lineage database is bacteria_odb10
 
-Database | _Sphingomicrobium_ sp. GRR-S6-50 | _Halomonas_ sp. YJPS3-2
----- | ---- | ----
-bacteria_odb10 | 100% | 99.2%
-
-* Genome contamination assession with CheckM v1.1.3
-
-Feature | _Sphingomicrobium_ sp. GRR-S6-50 | _Halomonas_ sp. YJPS3-2
----- | ---- | ----
-Marker lineage | c__Alphaproteobacteria (UID3305) | c__Gammaproteobacteria (UID4444)
-Completeness | 99.48 | 99.93
-Contamination | 1.23 | 0.48
+Statistics | YJP1-3 | GRR-S3-23 | GRR-SB-33
+---- | ---- | ---- | ----
+Total assembly length (bp) | 3,176,373 | 3,608,980 | 3,320,049
+Number of contigs | 2 | 1 | 1
+Contig N50 (bp) | 3,163,309 | 3,608,980 | 3,320,049
+Contig L50 | 1 | 1 | 1
+GC ratio (%) | 45.84 | 33.75 | 69.97
+Genome completeness (%) | 92.7 | 90.3 | 96.0
 
 ## 16S rRNA sequence based species evaluation
 
-* 16S rRNA sequence was identified from the genome sequence using Rfam database (v14.7) and Infernal v1.1.2
-  * Parameters: `cmscan --cut_ga --rfam --nohmmonly --tblout --fmt 2 --clanin Rfam.clanin Rfam.cm`
+* 16S rRNA sequence was identified from the genome sequence using [barrnap](https://github.com/tseemann/barrnap) v0.9 with default parameters.
 * Identified 16S rRNA sequence aligned against NCBI 16S rRNA database with NCBI [web-BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi)
-* [ANI raw data](./rawdata/ANI_analysis_rawdata.zip) in excel format.
+* 
+### YJP1-3
 
-### _Sphingomicrobium_ sp. GRR-S6-50
+* Alignment with 16S rRNA sequence of _Leeuwenhoekiella aestuarii_, _Cellulophaga algicola_, and _Leeuwenhoekiella nanhaiensis_ showed the TOP3 highest identity but sequence identity were all around 90%.
 
-* Alignment with 16S rRNA sequence of _Sphingomicrobium astaxanthinifaciens_ showed highest identity but genome sequence was not available.
-* _Sphingomicrobium_ sp. GRR-S6-50 showed about 75% Average Nucleotide Identity (ANI) with 2 _Sphingomicrobium_ genomes from NCBI. (GCF_014195685.1, GCF_019264355.1)
-* _Sphingomicrobium_ sp. GRR-S6-50 showed 71~74% ANI with 44 Sphingomonadaceae (family) complete reference genomes from NCBI.
+### GRR-S3-23
 
-### _Halomonas_ sp. YJPS3-2
+* Alignment with 16S rRNA sequence of _Tenacibaculum aiptasiae_ showed highest identity (97.57%).
 
-* Alignment with 16S rRNA sequence of _Halomonas salina_ showed highest identity but genome sequence was not available.
-* _Halomonas_ sp. YJPS3-2 showed 72.5~91.4% ANI with 94 _Halomonas_ reference genomes from NCBI.
-* ANI between _Halomonas_ sp. YJPS3-2 and _Halomonas halophila_ NBRC102604 (second higest rRNA sequence identity) was about 91%.
+### GRR-SB-33
+
+* Alignment with 16S rRNA sequence of _Jannaschia seosinensis_ showed highest identity (97.91%).
