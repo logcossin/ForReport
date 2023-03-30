@@ -16,19 +16,22 @@ Mean read quality score | 13.8 | 14.6 | 13.9
 
 ## Assembly summary
 
-* Reads with 
+* Reads with quality score over threshold value were filtered to generate genome with high completeness.
 * Reads were assembled with [Flye genome assembler](https://github.com/fenderglass/Flye) v2.9.2 with `--nano-hq --iterations 2` parameters.
-* Genome completeness assession with BUSCO v5.3.1
-* Used lineage database is bacteria_odb10
+* [Medaka](https://github.com/nanoporetech/medaka) v1.7.2 was used to correct errors in the draft genome assembly with `r941_min_sup_g507` model.
+* All 3 strains resulted in complete circular genome.
+* Genome completeness assession with [BUSCO](https://busco.ezlab.org/) v5.3.1 with lineage database bacteria_odb10.
 
 Statistics | YJP1-3 | GRR-S3-23 | GRR-SB-33
 ---- | ---- | ---- | ----
-Total assembly length (bp) | 3,176,373 | 3,608,980 | 3,320,049
-Number of contigs | 2 | 1 | 1
-Contig N50 (bp) | 3,163,309 | 3,608,980 | 3,320,049
+Read quality score threshold | 14 | 15 | 14
+Total assembly length (bp) | 3,163,819 | 3,610,406 | 3,320,675
+Number of contigs | 1 | 1 | 1
+Contig N50 (bp) | 3,163,819 | 3,610,406 | 3,320,675
 Contig L50 | 1 | 1 | 1
-GC ratio (%) | 45.84 | 33.75 | 69.97
-Genome completeness (%) | 92.7 | 90.3 | 96.0
+GC ratio (%) | 45.83 | 33.74 | 69.98
+Genome coverage | 47x | 77x | 75x
+Genome completeness (%) | 98.4 | 97.6 | 98.4
 
 ## 16S rRNA sequence based species evaluation
 
