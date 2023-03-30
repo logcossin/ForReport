@@ -16,6 +16,7 @@ Mean read quality score | 13.8 | 14.6 | 13.9
 
 ## Assembly summary
 
+* Reads with 
 * Reads were assembled with [Flye genome assembler](https://github.com/fenderglass/Flye) v2.9.2 with `--nano-hq --iterations 2` parameters.
 * Genome completeness assession with BUSCO v5.3.1
 * Used lineage database is bacteria_odb10
