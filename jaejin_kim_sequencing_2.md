@@ -1,6 +1,6 @@
 # gDNA sequencing summary for Prof. Jae-Jin Kim
 
-gDNA sequencing was performed with Illumina Miseq platform.
+gDNA sequencing was performed with Oxford Nanopore MinION platform.
 
 * Library preparation, sequencing: Xiaoyue Xu
 * Genome assembly, QC: Bogun Kim
