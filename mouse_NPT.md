@@ -1,17 +1,16 @@
-# Zebrafish RNA-seq analysis
+# Mouse RNA-seq analysis
 ## 1. Purpose
-+ Zebrafish embryo에 1,4-Naphthoquinone (1,4-NQ)를 처리한 후 control group과 비교해 Differentially Expressed Genes (DEGs)를 확인함.
-+ 기존 연구 결과를 확인해 1,4-NQ 관련 biomarker 유전자들이 DEG에 포함되어 있는지 탐색함. 
++ Mouse lung cell에 나프탈렌을 처리한 후 control group과 비교해 Differentially Expressed Genes (DEGs)를 확인함.
 
 ## 2. Data collecting
-+ 실험 및 RNA 추출: 충남대학교 생명시스템과학대학 김철희 교수님 연구실 박사과정 PUSPANJALI SWAIN 연구원
++ 실험 및 RNA 추출: 충남대학교 생명시스템과학대학 김철희 교수님 연구실
 + Sequencing: [Marcrogen, Inc.](https://www.macrogen.com/ko/main)
-+ 전체 sample은 2개로 sample 1은 아무 물질도 처리하지 않은 control group, sample 2는 0.5μM의 1,4-NQ를 6hpf 시점에서 처리한 group임.
++ 전체 sample은 2개로 control group, 나프탈렌을 처리한 group임.
 
-   | Sample | Category | Treat | Extract point
+   | Sample | Category | Treat
    | - | - | - | -
-   | Sample1 | Control | Untreated | 10hpf (bud stage)
-   | Sample2 | Treated | 1,4-NQ 0.5μM at 6hpf | 10hpf (bud stage)
+   | CON | Control | Untreated
+   | NPT | Treated | Naphthalene
 
 + Zebrafish reference genome으로는 NCBI의 GRCz11 (RefSeq accession: GCF_000002035.6) genome을 사용함.
 
