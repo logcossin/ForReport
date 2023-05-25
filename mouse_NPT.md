@@ -3,7 +3,7 @@
 + Mouse lung cell에 나프탈렌을 처리한 후 control group과 비교해 Differentially Expressed Genes (DEGs)를 확인함.
 
 ## 2. Data collecting
-+ 실험 및 RNA 추출: 충남대학교 생명시스템과학대학 김철희 교수님 연구실
++ 실험 및 RNA 추출: 순천향대학교 생명시스템과학대학 김철희 교수님 연구실
 + Sequencing: [Marcrogen, Inc.](https://www.macrogen.com/ko/main)
 + 전체 sample은 2개로 control group, 나프탈렌을 처리한 group임.
 
@@ -12,20 +12,10 @@
    | CON | Control | Untreated
    | NPT | Treated | Naphthalene
 
-+ Zebrafish reference genome으로는 NCBI의 GRCz11 (RefSeq accession: GCF_000002035.6) genome을 사용함.
-
-   Feature | Statistics
-   | - | -
-   Genome size (bp) | 1,373,454,788
-   Number of chromosomes | 25
-   Number of scaffolds | 1,917
-   Scaffold N50 (bp)| 7,379,053
-   Scaffold L50 | 44
-   GC ratio (%) | 36.5
-   Number of genes | 40,031
++ Mouse reference genome으로는 NCBI의 GRmm39 (RefSeq accession: GCF_000002035.6) genome을 사용함.
 
 ## 3. Read adapter trimming & QC
-+ TrimGalore (v0.6.6)를 사용해, read의 adapter trimming과 QC를 진행함.
++ TrimGalore (v0.6.10)를 사용해, read의 adapter trimming과 QC를 진행함.
 
    | Read | Total Read | Filtered Read | Total basepairs | Filtered basepairs
    | - | - | - | - | -
@@ -38,7 +28,7 @@
 
 ## 4. Read alignment
 + NCBI reference genome을 대상으로 QC가 끝난 read를 사용해 HISAT2 (v2.2.1)를 사용해 read alignment를 진행함.
-+ Used parameters: --max-intronlen 50000, other parameters default value
++ Used parameters: --max-intronlen 150000, other parameters default value
 + Read alignment 결과 통계는 아래와 같음.
 
    | Sample | Total reads | Overall alignment rate
