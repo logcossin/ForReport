@@ -8,7 +8,7 @@
 + 전체 sample은 2개로 control group, 나프탈렌을 처리한 group임.
 
    | Sample | Category | Treat
-   | - | - | - | -
+   | - | - | -
    | CON | Control | Untreated
    | NPT | Treated | Naphthalene
 
