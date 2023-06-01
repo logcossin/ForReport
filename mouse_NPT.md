@@ -3,46 +3,46 @@
 + Mouse lung cell에 나프탈렌을 처리한 후 control group과 비교해 Differentially Expressed Genes (DEGs)를 확인함.
 
 ## 2. Data collecting
-+ 실험 및 RNA 추출: 순천향대학교 생명시스템과학대학 김철희 교수님 연구실
++ 실험 및 RNA 추출: 순천향대학교 순천향의생명연구원 김현택 교수님 연구실
 + Sequencing: [Marcrogen, Inc.](https://www.macrogen.com/ko/main)
-+ 전체 sample은 2개로 control group, 나프탈렌을 처리한 group임.
++ 전체 sample은 8개로 control group, 나프탈렌을 처리한 group 각각 4개임.
 
-   | Sample | Category | Treat
-   | - | - | -
-   | CON | Control | Untreated
-   | NPT | Treated | Naphthalene
+Sample | Category | Total reads | Total bases (Gbp)
+--- | --- | --- | ---
+CON1 | Control | 67,025,882 | 6.8
+CON2 | Control | 78,515,996 | 7.9
+CON3 | Control | 67,985,654 | 6.9
+CON4 | Control | 81,451,888 | 8.2
+NPT1 | Naphthalene | 87,953,332 | 8.9 
+NPT2 | Naphthalene | 78,694,240 | 7.9
+NPT3 | Naphthalene | 61,675,176 | 6.2
+NPT4 | Naphthalene | 65,466,094 | 6.6
 
-+ Mouse reference genome으로는 NCBI의 GRmm39 (RefSeq accession: GCF_000002035.6) genome을 사용함.
++ Mouse reference genome으로는 NCBI의 GRCm39 (RefSeq accession: GCF_000001635.27)을 사용함.
 
 ## 3. Read adapter trimming & QC
 + TrimGalore (v0.6.10)를 사용해, read의 adapter trimming과 QC를 진행함.
-
-   | Read | Total Read | Filtered Read | Total basepairs | Filtered basepairs
-   | - | - | - | - | -
-   | Sample1_1 | 36,675,862 | 36,675,862 | 3,704,262,062 | 3,679,353,873 (99.3%)
-   | Sample1_2 | 36,675,862 | 36,675,862 | 3,704,262,062 | 3,672,750,272 (99.1%)
-   | Sample2_1 | 37,414,748 | 37,414,748 | 3,778,889,548 | 3,752,045,586 (99.3%)
-   | Sample2_2 | 37,414,748 | 37,414,748 | 3,778,889,548 | 3,745,527,653 (99.1%)
-
-+ QC가 끝난 read를 무작위하게 3개로 나눠 각 샘플당 3개의 replicate (a, b, c)를 만듦.
++ Filtering 이후 남은 base가 모든 sample에서 99% 이상으로 read quality에 문제 없음.
 
 ## 4. Read alignment
-+ NCBI reference genome을 대상으로 QC가 끝난 read를 사용해 HISAT2 (v2.2.1)를 사용해 read alignment를 진행함.
-+ Used parameters: --max-intronlen 150000, other parameters default value
-+ Read alignment 결과 통계는 아래와 같음.
++ NCBI reference genome을 대상으로 QC가 끝난 read를 HISAT2 (v2.2.1)를 사용해 read alignment를 진행함.
++ 사용한 parameters: --max-intronlen 150000, other parameters default
++ 모든 sample에서 95% 이상의 alignment rate을 보임.
 
-   | Sample | Total reads | Overall alignment rate
-   | - | - | -
-   | Sample1_a | 12,216,314 | 88.77%
-   | Sample1_b | 12,211,778 | 88.76%
-   | Sample1_c | 12,215,100 | 88.76%
-   | Sample2_a | 12,461,574 | 88.16%
-   | Sample2_b | 12,457,613 | 88.18%
-   | Sample2_c | 12,465,501 | 88.18%
+Sample | Overall alignment rate
+--- | ---
+CON1 | 96.13%
+CON2 | 97.52%
+CON3 | 97.81%
+CON4 | 96.67%
+NPT1 | 96.70%
+NPT2 | 97.12%
+NPT3 | 97.06%
+NPT4 | 97.04%
 
 ## 5. DEG analysis
 + R의 GenomicAlignments package (v1.30.0)를 사용해 gene 별로 align된 read의 raw count를 구함.
-+ Raw count를 R의 edgeR package (v3.36.0)를 사용해 RPKM, Log2FC (Fold change), P-value 등의 값을 계산함. [2022_zebrafish_triplate_deg_table_20210405.txt](https://github.com/Park-JungJoon/Zebra_fish-RNAseq/blob/main/Supplementary_data/2022_zebrafish_triplate_deg_table_20210405.txt)
++ Raw count를 R의 edgeR package (v3.36.0)를 사용해 RPKM, Log2FC (Fold change), P-value 등의 값을 계산함. 
 + Protein-coding gene을 제외한, tRNA, rRNA, miRNA, lncRNA 등의 non-coding gene은 모두 제거함.
 
 ### 5.1 edgeR analysis
