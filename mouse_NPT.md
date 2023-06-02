@@ -46,30 +46,6 @@ NPT4 | 97.04%
 + Protein-coding gene을 제외한, tRNA, rRNA, miRNA, lncRNA 등의 non-coding gene은 모두 제거함.
 
 ### 5.1 edgeR analysis
-+ 아래 표는 Sample 1, 2의 유전자 발현량 기본 통계를 나타냄.
-
-  * Raw count 
-  
-   | Statistics | Sample1_a raw count | Sample1_b raw count | Sample1_c raw count | Sample2_a raw count | Sample2_b raw count | Sample2_c raw count | Sample 1 mean raw count | Sample 2 mean raw count|
-   | - | - | - | - | - | - | - | - | - 
-   | Mean | 652.8 | 652.5 | 652.7 | 643.7 | 643.5 | 644.3 | 652.69 | 643.9
-   | Min | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0
-   | Max | 197,521 | 196,954 | 197,521 | 160,595 | 162,025 | 161,897 | 197,332 | 161,506
-   | 1st Quarter | 13 | 13 | 14 | 16 | 16 | 16 | 13.67 | 16
-   | Median | 107 | 106 | 106 | 113 | 112 | 112 | 106.33 | 113
-   | 3rd Quarter | 502 | 503 | 502 | 505 | 505 | 506 | 501.67 | 506.4
-   
-   * RPKM
-
-   | Statistics | Sample1_a RPKM | Sample1_b RPKM | Sample1_c RPKM | Sample2_a RPKM | Sample2_b RPKM | Sample2_c RPKM | Sample 1 mean RPKM | Sample 2 mean RPKM |
-   | - | - | - | - | - | - | - | - | - 
-   | Mean | 2.394 | 2.391 | 2.391 | 2.416 | 2.413 | 2.415 | 2.392 | 2.4145
-   | Min | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0
-   | Max | 1736.59 | 1718.83 | 1791.81 | 1853.94 | 1865.12 | 1904.55 | 1749.08 | 1874.54
-   | 1st Quarter | 0.056 | 0.056 | 0.056 | 0.063 | 0.063 | 0.064 | 0.0575 | 0.065
-   | Median | 0.298 | 0.298 | 0.297 | 0.305 | 0.309 | 0.309 | 0.298 | 0.308
-   | 3rd Quarter | 1.266 | 1.266 | 1.270 | 1.274 | 1.271 | 1.268 | 1.272 | 1.273
-   
 + 유전자 발현량 차이에 따라 유전자를 아래와 같이 분류함.
   * P-value가 0.005 이상인 유전자는 LogFC 값에 상관 없이 Non DEG로 분류함.
 
