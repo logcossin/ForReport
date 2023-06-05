@@ -27,7 +27,7 @@ NPT4 | Naphthalene | 65,466,094 | 6.6
 ## 4. Read alignment
 + NCBI reference genome을 대상으로 QC가 끝난 read를 HISAT2 (v2.2.1)를 사용해 read alignment를 진행함.
 + 사용한 parameters: --max-intronlen 150000, other parameters default
-+ 모든 sample에서 95% 이상의 alignment rate을 보임.
++ 모든 sample에서 96% 이상의 높은 alignment rate을 보임.
 
 Sample | Overall alignment rate
 --- | ---
@@ -41,9 +41,9 @@ NPT3 | 97.06%
 NPT4 | 97.04%
 
 ## 5. DEG analysis
-+ R의 GenomicAlignments package (v1.30.0)를 사용해 gene 별로 align된 read의 raw count를 구함.
-+ Raw count를 R의 edgeR package (v3.36.0)를 사용해 RPKM, Log2FC (Fold change), P-value 등의 값을 계산함. 
-+ Protein-coding gene을 제외한, tRNA, rRNA, miRNA, lncRNA 등의 non-coding gene은 모두 제거함.
++ Subread package (v2.0.6)의 featureCounts 프로그램을 사용해 gene 별로 align된 read의 raw count를 구함.
++ R의 edgeR package (v3.42.0)를 사용해 DEG (차등발현유전자) 분석을 진행함.
++ Protein-coding gene을 제외한, tRNA, rRNA, miRNA, lncRNA 등의 non-coding gene은 분석 대상에서 제외함.
 
 ### 5.1 edgeR analysis
 + 유전자 발현량 차이에 따라 유전자를 아래와 같이 분류함.
@@ -85,8 +85,4 @@ NPT4 | 97.04%
    + RPKM를 이용해 그린 heatmap에서 각 샘플의 replicate끼리 clustering이 되는 것을 확인함.
 
 ## 6. Result
-+ DEG 분석에서 LogFC의 절댓값이 3 이상인 유전자 중, 1,4-NQ과의 연관성이 과거 논문으로 알려진 유전자를 탐색함.
-+ Strongly upregulated group에 포함된 hsp70.3, hsp70.1, hsp90aa1.2, dnaja (hsp40) 유전자가 human carcinoma A431 cell에서 1,4-NQ 처리 시 발현이 증가했다는 [연구 결과](https://www.sciencedirect.com/science/article/pii/S0891584916311492)가 있음.
-+ 또한 strongly upregulated group인 [LOC103909982](https://www.ncbi.nlm.nih.gov/gene/103909982), pdcd4b-2, pdcd4b, [si:dkey-204l11.1](https://www.ncbi.nlm.nih.gov/gene/100006301), bbc3는 programmed cell death 또는 apoptosis 관련 유전자로 확인되었고, 1,4-NQ는 electron-accepting capability으로 인해 ROS (reactive oxygen species) 생산을 증가시켜 cell apoptosis를 유발한다는 [연구 결과](https://www.spandidos-publications.com/10.3892/mmr.2019.10500)가 있음.
-+ 또한 upregulated group에서도 heat shock protein (HSP) 관련 유전자들인 dnajb1b, ahsa1a, dnajb2, hspa4a 등이 확인됨.
-+ 따라서 이번 실험에서 확인한 1,4-NQ 처리 후 발견된 DEG들이 기존의 연구들과 유사한 경향성을 보이고 있다고 할 수 있음.
+
