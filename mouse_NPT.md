@@ -49,16 +49,13 @@ NPT4 | 97.04%
 + 유전자 발현량 차이에 따라 유전자를 아래와 같이 분류함.
   * P-value가 0.005 이상인 유전자는 LogFC 값에 상관 없이 Non DEG로 분류함.
 
-   | DEG category | LogFC (1,4-NQ treat/Control) | Count
-   | - | - | -
-   | Total | - | 32,843
-   | Strongly upregulated | LogFC >= 3 | 176
-   | Upregulated | 3 > LogFC >= 2 | 197
-   | Slightly upregulated | 2 > LogFC >= 1 | 759
-   | Non DEG | 1 > LogFC >= -1 or P-value > 0.005 | 31,402
-   | Slightly downregulated | -1 > LogFC > -2 | 215
-   | Downregulated | -2 >= LogFC > -3 | 36
-   | Strongly downregulated | -3 >= LogFC | 58
+Category | LogFC (Treated/Control) | Count
+---- | ---- | ----
+Total protein-coding genes | - | 22,244
+Filtered (low-expression) | - | 8,052
+Upregulated | LogFC > 2 | 178
+Not significant | |LogFC| <= 2 or P-value > 0.05 | 13,900
+Downregulated | LogFC < -2 | 114
 
 ### 5-1. Distribution of RPKM
 ![gitupload_rpkm](https://user-images.githubusercontent.com/97942772/193222648-de34e244-8319-4836-aaf2-5d33c1b8c9d5.png)
