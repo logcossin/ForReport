@@ -53,33 +53,23 @@ Category | LogFC (Treated/Control) | Count
 ---- | ---- | ----
 Total protein-coding genes | - | 22,244
 Filtered (low expression) | - | 8,052
-Upregulated | LogFC > 2 | 178
-Not significant | \|LogFC\| <= 2 or P-value > 0.05 | 13,900
-Downregulated | LogFC < -2 | 114
+Upregulated | LogFC > 2 and P-value < 0.05 | 114
+Not significant | \|LogFC\| <= 2 or P-value >= 0.05 | 13,900
+Downregulated | LogFC < -2 and P-value < 0.05 | 178
 
-### 5-1. Distribution of RPKM
-![gitupload_rpkm](https://user-images.githubusercontent.com/97942772/193222648-de34e244-8319-4836-aaf2-5d33c1b8c9d5.png)
+### 5-1. Distribution of gene expression
+![plot](https://github.com/logcossin/ForReport/assets/49052882/a5e9852b-8c05-43d6-b40d-6ddc2e9c31de)
 
-+ Sample1의 RPKM 값을 X축, sample2의 RPKM 값을 Y축으로 설정하고 scatterplot을 통해 분포를 확인함.
-+ Sample 당 3개의 replicate의 평균값을 사용함.
-+ RPKM 최대값(1,700 이상)에 비해, median은 sample1, sample2 각각 0.298, 0.308으로 낮음.
-+ 따라서 X, Y축의 범위를 10까지만 제한하여 나타냄.
- 
-### 5-2. Distribution of Log RPKM
-![logrpkm_upload](https://user-images.githubusercontent.com/97942772/193222622-7184fb5c-ffdc-46f1-afe6-61224cc560c0.png)
++ Control 샘플의 logTPM 평균을 X축, NPT 처리 샘플의 logTPM 평균을 Y축으로 설정하고 scatterplot을 통해 유전자 발현량의 분포를 확인함.
++ 
+![plot (1)](https://github.com/logcossin/ForReport/assets/49052882/23531cea-65cc-4605-a630-56ab7ca79001)
 
-+ Sample1, sample2 RPKM의 로그 값 분포를 확인함. 
-+ RPKM 값이 1 이하일 경우 Log RPKM 값은 음수가 되어 그래프를 통한 시각적 인식에 어려움이 있어 RPKM값에 1의 pseudocount를 더한 후 로그 값을 계산함.
++ X축을 전체 샘플의 평균 logTPM으로, Y축을 logFC(Fold change)로 설정하여 유전자 분포를 확인함.
 
-### 5-3. MA plot
-![maplot_upload](https://user-images.githubusercontent.com/97942772/193222596-ac88e06d-9613-4a62-8266-0c323623b344.png)
+### 5-2 Heatmap 
+![heatmap](https://github.com/logcossin/ForReport/assets/49052882/f62a9287-a5e0-4dd9-9b0a-9747a9216172)
 
-+ X축을 Sample 1과 2의 RPKM 평균의 로그 값(Log10, pseudocount 적용)으로, Y축을 LogFC(Log2)로 설정함.
-
-### 5-4 Heatmap 
-![heatmapfortriplate](https://user-images.githubusercontent.com/97942772/193222696-c1a6ee6f-2b77-423c-beaf-8f7fe60aa0ba.png)
-
-+ RPKM를 이용해 그린 heatmap에서 각 샘플의 replicate끼리 clustering이 되는 것을 확인함.
++ logTPM 값을 이용해 그린 heatmap에서 각 샘플의 replicate끼리 clustering이 되는 것을 확인함.
 
 ## 6. Result
 
