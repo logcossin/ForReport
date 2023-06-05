@@ -61,7 +61,7 @@ Downregulated | LogFC < -2 and P-value < 0.05 | 178
 ![plot](https://github.com/logcossin/ForReport/assets/49052882/a5e9852b-8c05-43d6-b40d-6ddc2e9c31de)
 
 + Control 샘플의 logTPM 평균을 X축, NPT 처리 샘플의 logTPM 평균을 Y축으로 설정하고 scatterplot을 통해 유전자 발현량의 분포를 확인함.
-+ 
+
 ![plot (1)](https://github.com/logcossin/ForReport/assets/49052882/23531cea-65cc-4605-a630-56ab7ca79001)
 
 + X축을 전체 샘플의 평균 logTPM으로, Y축을 logFC(Fold change)로 설정하여 유전자 분포를 확인함.
@@ -72,4 +72,7 @@ Downregulated | LogFC < -2 and P-value < 0.05 | 178
 + logTPM 값을 이용해 그린 heatmap에서 각 샘플의 replicate끼리 clustering이 되는 것을 확인함.
 
 ## 6. Result
+
++ NPT 처리 시 발현량이 증가한 유전자 114개의 Gene Ontology (GO) 분석 결과, response to stress (GO:0006950)와 response to chemical (GO:0042221)가 P-value 하위 5개 안에 포함되어 있음을 확인함.
++ NPT 처리 시 발현량이 감소한 유전자 178개의 Gene Ontology (GO) 분석 결과, cilium movement (GO:0003341)와 axoneme (GO:0005930) 등 cilium 관련 GO들이 P-value 하위 5개 안에 포함되어 있음을 확인함.
 
