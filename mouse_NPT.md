@@ -41,9 +41,10 @@ NPT3 | 97.06%
 NPT4 | 97.04%
 
 ## 5. DEG analysis
-+ Subread package (v2.0.6)의 featureCounts 프로그램을 사용해 gene 별로 align된 read의 raw count를 구함.
-+ R의 edgeR package (v3.42.0)를 사용해 DEG (차등발현유전자) 분석을 진행함.
-+ Protein-coding gene을 제외한, tRNA, rRNA, miRNA, lncRNA 등의 non-coding gene은 분석 대상에서 제외함.
++ Subread package(v2.0.6)의 featureCounts 프로그램을 사용해 gene 별로 align된 read count를 계산함.
++ Used parameters: `featureCounts -a mm39_RefSeq_exon.txt --countReadPairs -B -C -p`
++ R의 edgeR package(v3.42.0)를 사용해 DEG (차등발현유전자) 분석을 진행함.
++ Protein-coding gene이 아닌, tRNA, rRNA, miRNA, lncRNA 등의 non-coding gene은 분석 대상에서 제외함.
 
 ### 5.1 edgeR analysis
 + 유전자 발현량 차이에 따라 유전자를 아래와 같이 분류함.
@@ -54,7 +55,7 @@ Category | LogFC (Treated/Control) | Count
 Total protein-coding genes | - | 22,244
 Filtered (low-expression) | - | 8,052
 Upregulated | LogFC > 2 | 178
-Not significant | |LogFC| <= 2 or P-value > 0.05 | 13,900
+Not significant | \|LogFC\| <= 2 or P-value > 0.05 | 13,900
 Downregulated | LogFC < -2 | 114
 
 ### 5-1. Distribution of RPKM
