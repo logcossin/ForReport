@@ -66,10 +66,10 @@ Downregulated | LogFC < -2 and P-value < 0.05 | 178
 
 + X축을 전체 샘플의 평균 logTPM으로, Y축을 logFC(Fold change)로 설정하여 유전자 분포를 확인함.
 
-### 5-2 Heatmap 
+### 5-2 Heatmap of differentially expressed genes
 ![heatmap](https://github.com/logcossin/ForReport/assets/49052882/f62a9287-a5e0-4dd9-9b0a-9747a9216172)
 
-+ logTPM 값을 이용해 그린 heatmap에서 각 샘플의 replicate끼리 clustering이 되는 것을 확인함.
++ logTPM 값을 이용해 그린 차등발현유전자 292개의 heatmap에서 각 샘플의 replicate끼리 clustering이 되는 것을 확인함.
 
 ## 6. Result
 
