@@ -4,6 +4,8 @@ Tutorial for genome assembly using ONT reads.
 
 ### 1. Installing required softwares
 
+* 아래 명령어는 `leafeon` 서버에서 실행.
+
 ```
 cd $HOME
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
@@ -37,7 +39,10 @@ cd /flareon/analysis5/minion_reads
 # 탭으로 자동완성 가능
 cd 결과폴더/no_sample/날짜/fast5_pass
 # 시퀀싱에 사용한 barcode 폴더만 이동
-scp -r barcode## 아이디@leafeon.korea.ac.kr:/leafeon/analysis1/폴더명1
+scp -r barcode## 아이디@leafeon.korea.ac.kr:/leafeon/analysis1/아이디/폴더명1
 ```
 
-4. 
+4. Guppy 이용해 basecalling 진행.
+```
+cd /leafeon/analysis1/아이디/폴더명1
+guppy_basecaller
