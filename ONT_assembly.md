@@ -45,4 +45,13 @@ scp -r barcode## 아이디@leafeon.korea.ac.kr:/leafeon/analysis1/아이디/폴�
 4. Guppy 이용해 basecalling 진행.
 ```
 cd /leafeon/analysis1/아이디/폴더명1
-guppy_basecaller
+guppy_basecaller -i barcode## -s barcode##_output -c config파일 --chunks_per_runner 65 -x 'cuda:0'
+```
+* 사용한 flow cell 버전마다 사용해야 되는 config 파일이 다름.
+
+Flow cell | Config 파일
+---- | ----
+FLO-MIN106 | dna_r9.4.1_450bps_sup.cfg
+FLO-MIN111 | dna_r10.3_450bps_sup.cfg
+
+* FLO
