@@ -26,7 +26,8 @@ Ubuntu: 터미널에서 ssh 아이디@flareon.korea.ac.kr 입력 후 비밀번�
 ```
 
 2. `leafeon` 서버에 결과물 저장할 폴더 생성.
-```퍄 잭  
+```
+ssh 아이디@leafeon.korea.ac.kr
 cd /leafeon/analysis1/아이디
 mkdir 폴더명1
 ```
@@ -42,6 +43,7 @@ scp -r barcode## 아이디@leafeon.korea.ac.kr:/leafeon/analysis1/아이디/폴�
 
 4. Guppy 이용해 basecalling 진행.
 ```
+ssh 아이디@leafeon.korea.ac.kr
 cd /leafeon/analysis1/아이디/폴더명1
 # Check GPU usage
 nvidia-smi
