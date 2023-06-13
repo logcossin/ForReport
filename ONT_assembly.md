@@ -43,6 +43,9 @@ scp -r barcode## 아이디@leafeon.korea.ac.kr:/leafeon/analysis1/아이디/폴�
 4. Guppy 이용해 basecalling 진행.
 ```
 cd /leafeon/analysis1/아이디/폴더명1
+# Check GPU usage
+nvidia-smi
+# If other person is using GPU, lower chunks_per_runner value
 guppy_basecaller -i barcode## -s barcode##_output -c config파일 --chunks_per_runner 65 -x 'cuda:0'
 ```
 * 사용한 flow cell, sequencing kit 버전마다 사용해야 되는 config 파일이 다름.
@@ -69,7 +72,9 @@ SQK-OOO114 | e8.2_260bps_sup.cfg<br>e8.2_400bps_sup.cfg<br>e8.2_400bps_5khz_sup.
 cat barcode##_output/pass/* > barcode##.fastq
 # Read 통계 확인
 NanoStat --fastq barcode##.fastq
-# htop으로 현재 사용중인 CPU 확인해 -t 숫자 조절
+# Check CPU usage, press q to exit htop
+htop
+# 현재 사용중인 CPU 확인해 -t 숫자 조절
 flye --nano-hq barcode##.fastq -o barcode## -i 2 -t CPU수
 ```
 
