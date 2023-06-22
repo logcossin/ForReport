@@ -69,7 +69,8 @@ SQK-OOO114 | e8.2_260bps_sup.cfg<br>e8.2_400bps_sup.cfg<br>e8.2_400bps_5khz_sup.
 * 예시: FLO-MIN106, SQL-NBD112-24 사용 = dna_r9.4.1_e8.1_sup.cfg
 * 사용한 kit 버전은 시퀀싱 결과 폴더 내 final_summary 파일에서 확인 가능.
 
-5. flye 이용해 genome assembly 진행.
+### 3. Assembly
+1. flye 이용해 genome assembly 진행.
 ```
 cat barcode##_output/pass/* > barcode##.fastq
 # Read 통계 확인
@@ -80,7 +81,7 @@ htop
 flye --nano-hq barcode##.fastq -o barcode## -i 2 -t CPU수
 ```
 
-6. High quality read만 사용하여 assembly.
+2. High quality read만 사용하여 assembly.
 ```
 NanoFilt -q 12~15 barcode##.fastq > barcode##_q##.fastq
 flye --nano-hq barcode##_q##.fastq -o barcode##_q## -i 2 -t CPU수
@@ -89,4 +90,7 @@ flye --nano-hq barcode##_q##.fastq -o barcode##_q## -i 2 -t CPU수
 * 높은 퀄리티 read만 사용할 경우 보통 genome 품질도 좋아지나 직접 assembly 진행하여 확인 필요.
 * 일반적으로 세균은 genome coverage (depth) 30~40x 정도까지도 complete genome assembly 가능.
 
+3.
 
+
+### 4. Annotation
