@@ -18,6 +18,7 @@ conda install -c conda-forge -c bioconda nanofilt nanostat flye
 ### 2. Basecalling
 
 * ONT 시퀀싱 진행 시 MinKNOW 프로그램이 생산하는 read는 fast basecalling model을 사용한 것으로, read quality가 낮아 basecalling을 다시 해야함.
+* `<괄호>` 안에 있는 부분은 실제 이름으로 변경해서 사용.
 
 1. Sequencing 데이터가 있는 `flareon` 서버 접속.
 ```
@@ -27,27 +28,29 @@ Ubuntu: 터미널에서 ssh 아이디@flareon.korea.ac.kr 입력 후 비밀번�
 
 2. `leafeon` 서버에 결과물 저장할 폴더 생성.
 ```
-ssh 아이디@leafeon.korea.ac.kr
-cd /leafeon/analysis1/아이디
-mkdir 폴더명1
+# 아이디 부분 개인 서버 아이디로 변경
+ssh <아이디>@leafeon.korea.ac.kr
+cd /leafeon/analysis1/<아이디>
+# 결과 폴더명 원하는 이름으로 변경
+mkdir <output_folder_name>
 ```
 
 3. ONT fast5 파일을 `leafeon` 서버로 이동.
 ```
 cd /flareon/analysis5/minion_reads
 # 탭으로 자동완성 가능
-cd 결과폴더/no_sample/날짜/fast5_pass
-# 시퀀싱에 사용한 barcode 폴더만 이동
-scp -r barcode## 아이디@leafeon.korea.ac.kr:/leafeon/analysis1/아이디/폴더명1
+cd <결과폴더>/no_sample/<날짜>/fast5_pass
+# 사용한 barcode 폴더만 이동, ## 부분 바코드 숫자로 변경
+scp -r barcode## 아이디@leafeon.korea.ac.kr:/leafeon/analysis1/<아이디>/<output_folder_name>
 ```
 
 4. Guppy 이용해 basecalling 진행.
 ```
 ssh 아이디@leafeon.korea.ac.kr
 cd /leafeon/analysis1/아이디/폴더명1
-# Check GPU usage
+# GPU 사용량 확인
 nvidia-smi
-# If other person is using GPU, lower chunks_per_runner value
+# 다른 사람이 GPU 사용중일 시, chunks_per_runner 값 낮춰서 사용
 guppy_basecaller -i barcode## -s barcode##_output -c config파일 --chunks_per_runner 65 -x 'cuda:0'
 ```
 * 사용한 flow cell, sequencing kit 버전마다 사용해야 되는 config 파일이 다름.
