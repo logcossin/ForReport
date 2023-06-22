@@ -78,19 +78,27 @@ NanoStat --fastq barcode##.fastq
 # Check CPU usage, press q to exit htop
 htop
 # 현재 사용중인 CPU 확인해 -t 숫자 조절
-flye --nano-hq barcode##.fastq -o barcode## -i 2 -t CPU수
+flye --nano-hq barcode##.fastq -o barcode## -i 2 -t <CPU 수>
 ```
 
 2. High quality read만 사용하여 assembly.
 ```
 NanoFilt -q 12~15 barcode##.fastq > barcode##_q##.fastq
-flye --nano-hq barcode##_q##.fastq -o barcode##_q## -i 2 -t CPU수
+flye --nano-hq barcode##_q##.fastq -o barcode##_q## -i 2 -t <CPU 수>
 ```
 
 * 높은 퀄리티 read만 사용할 경우 보통 genome 품질도 좋아지나 직접 assembly 진행하여 확인 필요.
 * 일반적으로 세균은 genome coverage (depth) 30~40x 정도까지도 complete genome assembly 가능.
 
-3.
+3. Assembly QC
+```
+# Install BUSCO
+conda activate ont
+conda install -c bioconda busco
+busco -m genome -i <assembly FASTA 파일> -p <CPU 수>
+```
+
+* BUSCO는 특정 taxonomy lineage의 genome에서 1개씩 보존되어 있는 single-copy ortholog 유전자를 사용하여 genome의 completeness를 확인하는 프로그램임.
 
 
 ### 4. Annotation
