@@ -47,7 +47,7 @@ scp -r barcode## 아이디@leafeon.korea.ac.kr:/leafeon/analysis1/<아이디>/<o
 4. Guppy 이용해 basecalling 진행.
 ```
 ssh 아이디@leafeon.korea.ac.kr
-cd /leafeon/analysis1/아이디/폴더명1
+cd /leafeon/analysis1/<아이디>/<output_folder_name>
 # GPU 사용량 확인
 nvidia-smi
 # 다른 사람이 GPU 사용중일 시, chunks_per_runner 값 낮춰서 사용
@@ -78,7 +78,7 @@ SQK-OOO114 | e8.2_260bps_sup.cfg<br>e8.2_400bps_sup.cfg<br>e8.2_400bps_5khz_sup.
 cat barcode##_output/pass/* > barcode##.fastq
 # Read 통계 확인
 NanoStat --fastq barcode##.fastq
-# Check CPU usage, press q to exit htop
+# CPU 사용량 확인, q 눌러서 htop 나올 수 있음
 htop
 # 현재 사용중인 CPU 확인해 -t 숫자 조절
 flye --nano-hq barcode##.fastq -o barcode## -i 2 -t <CPU 수>
