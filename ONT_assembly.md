@@ -98,10 +98,32 @@ flye --nano-hq barcode##_q##.fastq -o barcode##_q## -i 2 -t <CPU 수>
 # Install BUSCO
 conda activate ont
 conda install -c bioconda busco
-busco -m genome -i <assembly FASTA 파일> -p <CPU 수>
+busco -m genome -i <assembly FASTA 파일> --out <output_name> --out_path <output_folder> -c <CPU 수> -l <lineage>
 ```
 
 * BUSCO는 특정 taxonomy lineage의 genome에서 1개씩 보존되어 있는 single-copy ortholog 유전자를 사용하여 genome의 completeness를 확인하는 프로그램임.
+* Lineage는 세균은 bacteria, 균류는 fungi 사용, `busco --list-datasets` 입력 시 가능한 모든 lineage 볼 수 있음.
 
+4. Assembly polishing
+
+* Short-read를 이용한 polishing은 이 튜토리얼에서 다루지 않음.
+
+```
+# Install requirements
+conda activate ont
+conda install -c conda-forge -c bioconda racon medaka minimap2
+
+# Align read to the assembly
+minimap2 -x map-ont -o <output>.paf -t <CPU 수> <assembly FASTA 파일> <read FASTQ 파일>
+
+# racon
+racon -t <CPU 수> <read FASTQ 파일> <output>.paf <assembly FASTA 파일> > <assembly_racon>.fasta
+
+# medaka, -m 값은 다른 flow cell 쓰면 변경해야 됨
+medaka_consensus -i <read FASTQ 파일> -d <assembly_racon>.fasta -o <medaka_output> -m r941_e81_sup_g514 -t <CPU 수>
+
+# Genome 품질 개선됐는지 확인
+busco -m genome -i <medaka_output>/consensus.fasta --out <output_name> --out_path <output_folder> -c <CPU 수> -l <lineage>
+```
 
 ### 4. Annotation
