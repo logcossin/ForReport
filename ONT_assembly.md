@@ -96,8 +96,9 @@ flye --nano-hq barcode##_q##.fastq -o barcode##_q## -i 2 -t <CPU 수>
 3. Assembly QC
 ```
 # Install BUSCO
-conda activate ont
-conda install -c bioconda busco
+conda create -n busco -c conda-forge -c bioconda busco=5.4.7
+conda activate busco
+# 앞에 (busco) 뜨는지 확인
 busco -m genome -i <assembly FASTA 파일> --out <output_name> --out_path <output_folder> -c <CPU 수> -l <lineage>
 ```
 
