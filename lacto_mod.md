@@ -1,1 +1,27 @@
+## Summary of the ONT sequencing (partial)
+
+Feature | barcode01 | barcode02 | barcode03
+---- | ---- | ---- | ----
+Number of reads | 134,017 | 44,328 | 24,132
+Total bases (Mbp) | 398.6 | 246.8 | 135.8
+Mean read length (bp) | 2,974.0 | 5,568.1 | 5,627.8
+Mean read quality | 16.6 | 16.0 | 15.9
+
+## Summary of the genome assembly
+
+Feature | barcode01 | barcode02 | barcode03
+---- | ---- | ---- | ----
+Total length (bp) | 2,047,414 | 2,077,540 | 2,077,613
+Contig number | 1 | 1 | 1
+BUSCO completeness | 99.7% | 99.5% | 99.0%
+
+## Virulence factor / Antibacterial resistance gene analysis
+
+* [ResFinder v4.4.1](http://genepi.food.dtu.dk/resfinder)
+* [VirulenceFinder v2.0](https://cge.food.dtu.dk/services/VirulenceFinder/)
+
+## Further analysis
+
+* Duplex basecalling
+* Modified base analysis
 
