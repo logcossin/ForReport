@@ -14,14 +14,15 @@ Feature | barcode01 | barcode02 | barcode03
 Total length (bp) | 2,047,414 | 2,077,540 | 2,077,613
 Contig number | 1 | 1 | 1
 BUSCO completeness | 99.7% | 99.5% | 99.0%
+Predicetd species | _L. reuteri_ | _L. fermentum_ | _L. fermentum_
+
+* All 3 strains assembled into complete circular chromosome.
+* Species was predicted with ANI analysis.
+
+![image](https://github.com/logcossin/ForReport/assets/49052882/7f58269e-c4bd-47f3-8ea0-10a3dddf7154)
 
 ## Virulence factor / Antibacterial resistance gene analysis
 
 * [ResFinder v4.4.1](http://genepi.food.dtu.dk/resfinder)
 * [VirulenceFinder v2.0](https://cge.food.dtu.dk/services/VirulenceFinder/)
-
-## Further analysis
-
-* Duplex basecalling
-* Modified base analysis
 
