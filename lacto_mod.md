@@ -1,6 +1,6 @@
 ## Summary of the ONT sequencing (partial)
 
-Feature | barcode01 | barcode02 | barcode03
+Feature | LAB60668 | LAB69 | LAB17
 ---- | ---- | ---- | ----
 Number of reads | 134,017 | 44,328 | 24,132
 Total bases (Mbp) | 398.6 | 246.8 | 135.8
@@ -9,14 +9,14 @@ Mean read quality | 16.6 | 16.0 | 15.9
 
 ## Summary of the genome assembly
 
-Feature | barcode01 | barcode02 | barcode03
+Feature | LAB60668 | LAB69 | LAB17
 ---- | ---- | ---- | ----
 Total length (bp) | 2,047,414 | 2,077,540 | 2,077,613
 Contig number | 1 | 1 | 1
 BUSCO completeness | 99.7% | 99.5% | 99.0%
 Predicetd species | _L. reuteri_ | _L. fermentum_ | _L. fermentum_
 
-* All 3 strains assembled into complete circular chromosome.
+* All 3 strains assembled into one complete circular genome with over 99% genome completeness (lactobacillales_odb10 dataset).
 * Species was predicted with ANI analysis.
 
 ![image](https://github.com/logcossin/ForReport/assets/49052882/7f58269e-c4bd-47f3-8ea0-10a3dddf7154)
