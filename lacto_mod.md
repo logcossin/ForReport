@@ -19,7 +19,7 @@ Predicetd species | _L. reuteri_ | _L. fermentum_ | _L. fermentum_
 * All 3 strains assembled into one complete circular genome with over 99% genome completeness (lactobacillales_odb10 dataset).
 * Species was predicted with ANI analysis.
 
-![image](https://github.com/logcossin/ForReport/assets/49052882/7f58269e-c4bd-47f3-8ea0-10a3dddf7154)
+![image](https://github.com/logcossin/ForReport/assets/49052882/c4129b75-5675-4a01-8316-1288fa7391e5)
 
 ## Virulence factor / Antibacterial resistance gene analysis
 
