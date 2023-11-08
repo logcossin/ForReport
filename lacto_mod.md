@@ -23,6 +23,8 @@ Predicetd species | _L. reuteri_ | _L. fermentum_ | _L. fermentum_
 
 ## Virulence factor / Antibacterial resistance gene analysis
 
-* [ResFinder v4.4.1](http://genepi.food.dtu.dk/resfinder)
-* [VirulenceFinder v2.0](https://cge.food.dtu.dk/services/VirulenceFinder/)
+* Virulence factor analysis was performed by [VirulenceFinder v2.0.3](https://cge.food.dtu.dk/services/VirulenceFinder/) with all species selected.
+* Antibacterial resistance gene analysis was performed by [ResFinder v4.4.1](http://genepi.food.dtu.dk/resfinder) with default parameters.
+----
 
+* No virulence factor or antibacterial resistance gene was found in all 3 strains.
