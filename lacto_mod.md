@@ -17,7 +17,7 @@ Predicetd species | _L. reuteri_ | _L. fermentum_ | _L. fermentum_
 Identified protein-coding genes | 1,950 | 1,924 | 1,923
 BUSCO completeness | 99.7% | 99.7% | 99.7%
 
-* PGAP v6.6
+* Genome annotation was performed by NCBI [Prokaryotic Genome Annotation Pipeline v6.6](https://github.com/ncbi/pgap).
 * All 3 strains assembled into one complete circular genome with over 99% genome completeness (lactobacillales_odb10 dataset).
 * Species was predicted with ANI analysis.
 
