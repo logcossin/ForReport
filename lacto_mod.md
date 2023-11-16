@@ -28,3 +28,5 @@ Predicetd species | _L. reuteri_ | _L. fermentum_ | _L. fermentum_
 ----
 
 * No virulence factor or antibacterial resistance gene was found in all 3 strains.
+
+## Summary of the genome annotation
