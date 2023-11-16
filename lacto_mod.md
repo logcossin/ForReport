@@ -7,15 +7,17 @@ Total bases (Mbp) | 3,017.0 | 1,850.0 | 1,115.5
 Mean read length (bp) | 3,277.6 | 6,163.8 | 6,272.7
 Mean read quality | 17.9 | 17.5 | 17.4
 
-## Summary of the genome assembly
+## Summary of the genome assembly and annotation
 
 Feature | LAB60668 | LAB69 | LAB17
 ---- | ---- | ---- | ----
 Total length (bp) | 2,048,909 | 2,077,559 | 2,077,645
 Contig number | 1 | 1 | 1
-BUSCO completeness | 99.7% | 99.5% | 99.5%
 Predicetd species | _L. reuteri_ | _L. fermentum_ | _L. fermentum_
+Identified protein-coding genes | 1,950 | 1,924 | 1,923
+BUSCO completeness | 99.7% | 99.7% | 99.7%
 
+* PGAP v6.6
 * All 3 strains assembled into one complete circular genome with over 99% genome completeness (lactobacillales_odb10 dataset).
 * Species was predicted with ANI analysis.
 
@@ -28,5 +30,3 @@ Predicetd species | _L. reuteri_ | _L. fermentum_ | _L. fermentum_
 ----
 
 * No virulence factor or antibacterial resistance gene was found in all 3 strains.
-
-## Summary of the genome annotation
