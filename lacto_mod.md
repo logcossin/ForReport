@@ -13,7 +13,7 @@ Feature | LAB60668 | LAB69 | LAB17
 ---- | ---- | ---- | ----
 Total length (bp) | 2,048,909 | 2,077,559 | 2,077,645
 Contig number | 1 | 1 | 1
-BUSCO completeness | 99.7% | 99.7% | 99.7%
+BUSCO completeness | 99.7% | 99.5% | 99.5%
 Predicetd species | _L. reuteri_ | _L. fermentum_ | _L. fermentum_
 
 * All 3 strains assembled into one complete circular genome with over 99% genome completeness (lactobacillales_odb10 dataset).
