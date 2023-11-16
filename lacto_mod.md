@@ -15,6 +15,7 @@ Total length (bp) | 2,048,909 | 2,077,559 | 2,077,645
 Contig number | 1 | 1 | 1
 Predicetd species | _L. reuteri_ | _L. fermentum_ | _L. fermentum_
 Identified protein-coding genes | 1,950 | 1,924 | 1,923
+Average gene length (aa) | 297.0 | 298.2 | 298.0
 BUSCO completeness | 99.7% | 99.7% | 99.7%
 
 * Genome annotation was performed by NCBI [Prokaryotic Genome Annotation Pipeline v6.6](https://github.com/ncbi/pgap).
