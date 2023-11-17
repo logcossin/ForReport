@@ -24,7 +24,7 @@ BUSCO completeness | 99.7% | 99.7% | 99.7%
 
 ![image](https://github.com/logcossin/ForReport/assets/49052882/c4129b75-5675-4a01-8316-1288fa7391e5)
 
-### 
+### Genome completeness analysis
 
 * _L. reuteri_ LAB60668 does not have the [3'-5' exonuclease](https://v10.orthodb.org/?query=25336at186826) but
 * _L. fermentum_ LAB69 and LAB17 have fragmented [Dihydrofolate reductase](https://www.orthodb.org/v10?query=61889at186826)
