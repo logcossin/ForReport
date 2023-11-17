@@ -31,12 +31,12 @@ BUSCO completeness | 99.7% | 99.7% | 99.7%
 
 ----
 * _L. reuteri_ LAB60668 have analyzed to miss the [3'-5' exonuclease](https://v10.orthodb.org/?query=25336at186826) gene.
-* BLAST alignment using the [3'-5' exonuclease](https://www.ncbi.nlm.nih.gov/protein/WP_012391483.1) gene seqeunce of _Limosilactobacillus fermentum_ in the BUSCO database had no significant hits to the _L. reuteri_ genes in the NCBI database.
-*  itself lacks the 3'-5' exonuclease gene.
+* BLAST alignment using the [3'-5' exonuclease](https://www.ncbi.nlm.nih.gov/protein/WP_012391483.1) gene seqeunce of _Limosilactobacillus fermentum_ in the BUSCO database resulted with no significant hits to the _L. reuteri_ genes in the NCBI database.
+* The _L. reuteri_ species itself lacks the gene homologous to the 3'-5' exonuclease in the BUSCO database.
 
 ----
 * _L. fermentum_ LAB69 and LAB17 have analyzed to have fragmented [Dihydrofolate reductase](https://www.orthodb.org/v10?query=61889at186826) gene.
-* 
+* _L. fermentum_ WP_003683166.1 _L. plantarum_ WP_135293957.1 have lower scores, analyzed as fragmented but have full sequence.
 
 ## Virulence factor / Antibacterial resistance gene analysis
 
