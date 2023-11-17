@@ -26,7 +26,14 @@ BUSCO completeness | 99.7% | 99.7% | 99.7%
 
 ### Genome completeness analysis
 
-* _L. reuteri_ LAB60668 does not have the [3'-5' exonuclease](https://v10.orthodb.org/?query=25336at186826) but species lack the specific gene.
+* According to the BUSCO genome completeness analysis, all 3 strains have 1 fragmented/missing BUSCO gene.
+* Further analysis of the 3 fragmented/missing genes was performed.
+
+----
+* _L. reuteri_ LAB60668 have analyzed to miss the [3'-5' exonuclease](https://v10.orthodb.org/?query=25336at186826) gene.
+* BLAST alignment using the [3'-5' exonuclease](https://www.ncbi.nlm.nih.gov/protein/WP_012391483.1) gene seqeunce from _Limosilactobacillus fermentum_ in the BUSCO database showed _L. reuteri_ species itself lacks the 3'-5' exonuclease gene.
+
+----
 * _L. fermentum_ LAB69 and LAB17 have fragmented [Dihydrofolate reductase](https://www.orthodb.org/v10?query=61889at186826)
 
 ## Virulence factor / Antibacterial resistance gene analysis
