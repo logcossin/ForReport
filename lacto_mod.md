@@ -14,7 +14,10 @@ Feature | LAB60668 | LAB69 | LAB17
 Total length (bp) | 2,048,909 | 2,077,559 | 2,077,645
 Contig number | 1 | 1 | 1
 Predicetd species | _L. reuteri_ | _L. fermentum_ | _L. fermentum_
-Identified protein-coding genes | 1,950 | 1,924 | 1,923
+Protein-coding genes | 1,950 | 1,924 | 1,923
+rRNAs | 18 | 15 | 15
+tRNAs | 69 | 58 | 58
+CRISPR arrays | 0 | 1 | 1
 Average gene length (aa) | 297.0 | 298.2 | 298.0
 BUSCO completeness | 99.7% | 99.7% | 99.7%
 
