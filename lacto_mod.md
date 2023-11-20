@@ -31,12 +31,19 @@ BUSCO completeness | 99.7% | 99.7% | 99.7%
 
 ----
 * _L. reuteri_ LAB60668 have analyzed to miss the [3'-5' exonuclease](https://v10.orthodb.org/?query=25336at186826) gene.
-* BLAST alignment using the [3'-5' exonuclease](https://www.ncbi.nlm.nih.gov/protein/WP_012391483.1) gene seqeunce of _Limosilactobacillus fermentum_ in the BUSCO database resulted with no significant hits to the _L. reuteri_ genes in the NCBI database.
-* The _L. reuteri_ species itself lacks the gene homologous to the 3'-5' exonuclease in the BUSCO database.
+* BLAST sequence alignment using the [3'-5' exonuclease](https://www.ncbi.nlm.nih.gov/protein/WP_012391483.1) gene seqeunce of _Limosilactobacillus fermentum_ in the BUSCO database resulted with no significant hits to the _L. reuteri_ genes in the NCBI database.
+* The _L. reuteri_ species itself lacks the 3'-5' exonuclease in the BUSCO database.
 
 ----
 * _L. fermentum_ LAB69 and LAB17 have analyzed to have fragmented [Dihydrofolate reductase](https://www.orthodb.org/v10?query=61889at186826) gene.
-* _L. fermentum_ WP_003683166.1 _L. plantarum_ WP_135293957.1 have lower scores, analyzed as fragmented but have full sequence.
+
+![스크린샷 2023-11-20 095031](https://github.com/logcossin/ForReport/assets/49052882/e7267847-751d-4a02-ac6b-dcac16eef47b)
+![스크린샷 2023-11-20 095015](https://github.com/logcossin/ForReport/assets/49052882/f337b028-1da6-4566-98c7-1b717758e907)
+
+* From the multiple sequence alignment result of the dihydrofolate reductase genes from the Lactobacillales species in the NCBI database, the gene from [_L. fermentum_](https://www.ncbi.nlm.nih.gov/protein/WP_003683166.1/) (above) show higher mismatches (highlighted red) than gene from [_L. plantarum_](https://www.ncbi.nlm.nih.gov/protein/WP_135293957.1/) (below)
+* The genome completeness assement model used by BUSCO misjudges dihydrofolate reductase gene from _L. fermentum_ as fragmented due to less conserved sequences shown above.
+* The reference genome of _L. fermentum_ ([GCF_029961225.1](https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_029961225.1/)) in the NCBI database was also analyzed to have fragmented dihydrofolate reductase gene when analyzed with BUSCO.
+* _L. fermentum_ LAB69 and LAB17
 
 ## Virulence factor / Antibacterial resistance gene analysis
 
