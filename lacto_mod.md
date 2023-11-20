@@ -43,7 +43,7 @@ BUSCO completeness | 99.7% | 99.7% | 99.7%
 * From the multiple sequence alignment result of the dihydrofolate reductase genes from the Lactobacillales species in the NCBI database, the gene from [_L. fermentum_](https://www.ncbi.nlm.nih.gov/protein/WP_003683166.1/) (above) show higher mismatches (highlighted red) than gene from [_L. plantarum_](https://www.ncbi.nlm.nih.gov/protein/WP_135293957.1/) (below)
 * The genome completeness assement model used by BUSCO misjudges dihydrofolate reductase gene from _L. fermentum_ as fragmented due to less conserved sequences shown above.
 * The reference genome of _L. fermentum_ ([GCF_029961225.1](https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_029961225.1/)) in the NCBI database was also analyzed to have fragmented dihydrofolate reductase gene when analyzed with BUSCO.
-* _L. fermentum_ LAB69 and LAB17
+* _L. fermentum_ LAB69 and LAB17 both have a complete dihydrofolate reductase gene, but misjudged as fragmented due to errors in the BUSCO model.
 
 ## Virulence factor / Antibacterial resistance gene analysis
 
