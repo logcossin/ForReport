@@ -22,7 +22,7 @@ Average gene length (aa) | 297.0 | 298.2 | 298.0
 BUSCO completeness | 99.7% | 99.7% | 99.7%
 
 * Genome annotation was performed by NCBI [Prokaryotic Genome Annotation Pipeline v6.6](https://github.com/ncbi/pgap).
-* All 3 strains assembled into one complete circular genome with over 99% genome completeness (lactobacillales_odb10 dataset).
+* All 3 strains assembled into one complete circular genome with over 99% genome completeness ([BUSCO v5.4.6](https://busco.ezlab.org/) lactobacillales_odb10 dataset).
 * Species was predicted with ANI analysis.
 
 ![image](https://github.com/logcossin/ForReport/assets/49052882/c4129b75-5675-4a01-8316-1288fa7391e5)
