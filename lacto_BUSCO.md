@@ -1,9 +1,9 @@
 # BUSCO analysis summary
 
 * Data used for analysis: *Limosilactobacillus fermentum* 200 RefSeq genomes (Downloaded 24/03/25)
-* Used BUSCO analysis lineages: Bacteria, Lactobacillales (Lactic Acid Bacteria)
+* Used BUSCO analysis lineages: Bacteria, Lactobacillales (Lactic Acid Bacteria) with default parameters
 
-Dataset | Bacteria | Lactobacillaels
+Dataset | Bacteria | Lactobacillales
 ---- | ---- | ----
 Total genes | 124 | 402
 Fully Complete | 71 | 212
@@ -11,6 +11,10 @@ Contain Duplicated | 4 | 4
 Contain Fragmented | 13 | 27
 Contain Missing | 28 | 118
 Contain More than 2 | 8 | 41
+
+* Fully Complete: all analyzed genomes have complete BUSCO gene
+* Contain XXX: at least one genome have XXX BUSCO gene
+* Contain More than 2: more than 2 incomplete BUSCO gene statuses were found in genomes
 
 # ANI analysis
 
