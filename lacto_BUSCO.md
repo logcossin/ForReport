@@ -1,10 +1,11 @@
 # BUSCO analysis summary
 
-* *L. fermentum* 200 RefSeq genomes
-* BUSCO dataset: Bacteria (142 genes), Lactobacillales (402 genes)
+* Data used for analysis: *Limosilactobacillus fermentum* 200 RefSeq genomes (Downloaded 24/03/25)
+* Used BUSCO analysis lineages: Bacteria, Lactobacillales (Lactic Acid Bacteria)
 
-Status | Bacteria | Lactobacillaels
+Dataset | Bacteria | Lactobacillaels
 ---- | ---- | ----
+Total genes | 124 | 402
 Fully Complete | 71 | 212
 Contain Duplicated | 4 | 4
 Contain Fragmented | 13 | 27
@@ -15,9 +16,8 @@ Contain More than 2 | 8 | 41
 
 ![image](https://github.com/logcossin/ForReport/assets/49052882/5e7d0101-2693-4be8-a700-7bac4ec3e428)
 
-* ANI analysis was performed using pyani with default parameters
-* 200 RefSeq *L. fermentum* genomes were mainly separted into 4 groups
-* Most of the genomes (157) are inside group 1 and 2 (>99% identity)
-* Group 3 genomes (34) have 92~94% CheckM completeness
-* Group 4 genomes (9) have 88~91% CheckM completeness and fragmented structure (>100 contigs)
-
+* ANI analysis was performed using [pyani](https://github.com/widdowquinn/pyani) with default parameters
+* *L. fermentum* genomes were mainly clustered into 4 groups
+* Most of the genomes (157) were inside group 1 and 2 (>99% identity)
+* Group 3 genomes (34) had 92~94% CheckM completeness
+* Group 4 genomes (9) had 88~91% CheckM completeness and fragmented genome sequence (>100 contigs)
