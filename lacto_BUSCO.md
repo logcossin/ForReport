@@ -32,7 +32,7 @@ Dihydrofolate reductase (61889at186826) | 128
 Glucose-6-phosphate isomerase (7599at186826) | 36
 
 ----
-* ADP-dependent (S)-NAD(P)H-hydrate dehydratase gene is incomplete in strains SRCM103285 (GCF_004063515.1), KMB_612 (GCF_003346325.1), KMB_613 (GCF_003346315.1)
+* ADP-dependent (S)-NAD(P)H-hydrate dehydratase is incomplete in strains SRCM103285 (GCF_004063515.1), KMB_612 (GCF_003346325.1), KMB_613 (GCF_003346315.1)
 1. The gene is defined as pseudogene because of partial gene sequence and missing C-terminus in SRCM103285
 2. The genes are 193 and 195 aa in KMB_612 and KMB_613, respectively. Which is much shorter than median protein length (280 aa).
 
@@ -40,6 +40,14 @@ Glucose-6-phosphate isomerase (7599at186826) | 36
 ![image](https://github.com/logcossin/ForReport/assets/49052882/81673fa7-44b0-4991-9a1c-f58b85058a3a)
 
 The gene is located and separted into two contigs. Both genomes are consisted of more than 100 contigs.
+
+----
+
+* Dihydrofolate reductase is analyzed fragmented in most of the *L. fermentum* genomes.
+* The average length of genes analzyed as complete (166.6 aa) or fragmented (166.8 aa) is almost the same.
+* BUSCO marker gene completeness is assessed by HMM profile align scores and length, if found to be fragmented, the BUSCO matches have proper scores but not the alignment lengths to the BUSCO profile.
+* The average aligned length of genes analzyed as complete (75.4 aa) is much higher than fragmented (59.0 aa).
+
 
 # ANI analysis
 
