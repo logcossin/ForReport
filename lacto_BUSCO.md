@@ -42,11 +42,16 @@ Glucose-6-phosphate isomerase (7599at186826) | 36
 The gene is located and separted into two contigs. Both genomes are consisted of more than 100 contigs.
 
 ----
-
 * Dihydrofolate reductase is analyzed fragmented in most of the *L. fermentum* genomes.
 * The average length of genes analzyed as complete (166.6 aa) or fragmented (166.8 aa) is almost the same.
 * BUSCO marker gene completeness is assessed by HMM profile align scores and length, if found to be fragmented, the BUSCO matches have proper scores but not the alignment lengths to the BUSCO profile.
-* The average aligned length of genes analzyed as complete (75.4 aa) is much higher than fragmented (59.0 aa).
+* The average alignment length of genes analzyed as complete (75.4 aa) is higher than fragmented (59.0 aa).
+
+----
+* Glucose-6-phosphate isomerase is analyzed fragmented in 21 genomes and missing in 15 genomes.
+* The average length of genes analzyed as complete (427.7 aa) is higher than fragmented (303.1 aa).
+* 
+
 
 
 # ANI analysis
