@@ -18,8 +18,17 @@ Contain More than 2 | 8 | 41
 
 # Incomplete BUSCO gene analysis
 
-* Genomes with BUSCO completeness over 99% were filtered for further analysis
+* Genomes with BUSCO completeness over 98% (bacteria) or 99% (lactobacillales) were filtered for further analysis
 * Bacteria (105 genomes, 53 genes), Lactobacillales (148 genomes, 190 genes)
+
+## Bacteria lineage
+
+* 2 genes were analyzed as incomplete (Fragmented + Missing) in more than 2% of the 105 genomes
+
+Gene | Incomplete genomes
+---- | ----
+Ribosomal protein L35 (2046660at2) | 160
+Chorismate synthase (981870at2) | 39
 
 ## Lactobacillales lineage
 
@@ -51,9 +60,8 @@ Glucose-6-phosphate isomerase (7599at186826) | 36
 ----
 * Glucose-6-phosphate isomerase is analyzed fragmented in 21 genomes and missing in 15 genomes.
 * The average length of genes analzyed as complete (427.7 aa) is higher than fragmented (303.1 aa).
-* 
-
-
+* All fragmented genes from 21 genomes are located at the edge of the contigm, leading to truncated sequences.
+* Genomes analyzed as missing gene have gene sequences truncated near the middle or on both ends (too short), the [PGAP](https://github.com/ncbi/pgap) defined them as pseudogenes.
 
 # ANI analysis
 
