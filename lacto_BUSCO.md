@@ -82,11 +82,14 @@ Glucose-6-phosphate isomerase (7599at186826) | 36
 
 ## Automatic detection of incomplete BUSCO genes in the genome
 
-1. Gene truncation by mutation
+* Incomplete genes could be found by BUSCO due to reasons below:
+1. Gene truncation by mutation (frameshift, nonsense)
 2. Gene located at the edge of the contig
 3. Gene deletion
+4. Short alignment length to the BUSCO HMM profile
 
-* TBLASTN (protein to translated nucleotide) search
+* TBLASTN (protein to translated nucleotide) search could be used to detect possible fragments in the genome sequence
+* Comparing the length of fragmented and complete gene could be used for 4.
 
 # ANI analysis
 
