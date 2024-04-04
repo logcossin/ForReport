@@ -80,6 +80,10 @@ Glucose-6-phosphate isomerase (7599at186826) | 36
 * All fragmented genes from 21 genomes are located at the edge of the contigm, leading to truncated sequences.
 * Genomes analyzed as missing gene have gene sequences truncated near the middle or on both ends (too short), the [PGAP](https://github.com/ncbi/pgap) defined them as pseudogenes.
 
+## Automatic detection of incomplete BUSCO genes in the genome
+
+* 
+
 # ANI analysis
 
 ![image](https://github.com/logcossin/ForReport/assets/49052882/5e7d0101-2693-4be8-a700-7bac4ec3e428)
