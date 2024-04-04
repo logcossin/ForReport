@@ -22,7 +22,7 @@ Contain More than 2 | 8 | 41
 * Genomes with BUSCO completeness over 98% (bacteria) and 99% (lactobacillales) were sampled for further analysis
 * Bacteria (160 genomes, 53 genes), Lactobacillales (148 genomes, 190 genes)
 
-## Bacteria lineage
+## Bacteria lineage ODB
 
 * 2 genes were analyzed as incomplete (Fragmented + Missing) in more than 2% of the 160 genomes
 
@@ -49,7 +49,7 @@ Chorismate synthase (981870at2) | 39
 
 * Example of aroC gene in *L. fermentum* AF15-40LB (GCF_003464285.1) with internal stop codon
 
-## Lactobacillales lineage
+## Lactobacillales lineage ODB
 
 * 3 genes were analyzed as incomplete (Fragmented + Missing) in more than 2% of the 148 genomes
 
