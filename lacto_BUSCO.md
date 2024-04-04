@@ -2,6 +2,7 @@
 
 * Data used for analysis: *Limosilactobacillus fermentum* 200 RefSeq genomes (Downloaded 24/03/25)
 * Used BUSCO analysis lineages: Bacteria, Lactobacillales (Lactic Acid Bacteria) with default parameters
+* All data available at directory `/panpyro/alfa/bgkim/lacto` (PANPYRO server)
 
 Dataset | Bacteria | Lactobacillales
 ---- | ---- | ----
@@ -31,13 +32,13 @@ Ribosomal protein L35 (2046660at2) | 160
 Chorismate synthase (981870at2) | 39
 
 ----
-* Ribosomal protein L35 was fragmented in every 160 genomes analyzed
+* `Ribosomal protein L35` was fragmented in every 160 genomes analyzed
 * The length of *L. fermentum* genes (65 aa) is the same as median bacterial gene length in [OrthoDB](https://v10-1.orthodb.org/?query=2046660at2).
 * BUSCO marker gene completeness is assessed by HMM profile align scores and length and if found to be fragmented, the BUSCO matches have proper scores but not the alignment lengths to the BUSCO profile.
 * The profile alignment length of genes (22 aa) is below the threshold (33 aa) to be defined as complete.
 
 ----
-* Chorismate synthase (aroC) is analyzed missing in 39 genomes.
+* `Chorismate synthase (aroC)` is analyzed missing in 39 genomes.
 * All 39 genomes have the chorismate synthase pseudogene in result of frameshift, nonsense mutation.
 
 ![image](https://github.com/logcossin/ForReport/assets/49052882/392fcd0e-4b04-471c-aee9-362f6c10c3d8)
@@ -59,7 +60,7 @@ Dihydrofolate reductase (61889at186826) | 128
 Glucose-6-phosphate isomerase (7599at186826) | 36
 
 ----
-* ADP-dependent (S)-NAD(P)H-hydrate dehydratase is incomplete in strains SRCM103285 (GCF_004063515.1), KMB_612 (GCF_003346325.1), KMB_613 (GCF_003346315.1)
+* `ADP-dependent (S)-NAD(P)H-hydrate dehydratase` is incomplete in strains SRCM103285 (GCF_004063515.1), KMB_612 (GCF_003346325.1), KMB_613 (GCF_003346315.1)
 1. The gene is defined as pseudogene because of partial gene sequence and missing C-terminus in strain SRCM103285
 2. The genes are 193 and 195 aa in strain KMB_612 and KMB_613, respectively. Which is much shorter than median protein length (280 aa).
 
@@ -70,12 +71,12 @@ Glucose-6-phosphate isomerase (7599at186826) | 36
 * The gene is located and separted into two contigs.
 
 ----
-* Dihydrofolate reductase is analyzed fragmented in most of the *L. fermentum* genomes.
+* `Dihydrofolate reductase` is analyzed fragmented in most of the *L. fermentum* genomes.
 * The average length of genes analzyed as complete (166.6 aa) or fragmented (166.8 aa) is almost the same.
 * The average alignment length of genes analzyed as complete (75.4 aa) was higher than fragmented (59.0 aa).
 
 ----
-* Glucose-6-phosphate isomerase is analyzed fragmented in 21 genomes and missing in 15 genomes.
+* `Glucose-6-phosphate isomerase` is analyzed fragmented in 21 genomes and missing in 15 genomes.
 * The average length of genes analzyed as complete (427.7 aa) was higher than fragmented (303.1 aa).
 * All fragmented genes from 21 genomes were located at the edge of the contigm, leading to truncated sequences.
 * Genomes analyzed as missing gene had gene sequences truncated near the middle or on both ends (too short), the [PGAP](https://github.com/ncbi/pgap) defined them as pseudogenes.
