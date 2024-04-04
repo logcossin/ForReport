@@ -65,20 +65,20 @@ Glucose-6-phosphate isomerase (7599at186826) | 36
 ![image](https://github.com/logcossin/ForReport/assets/49052882/b33e8895-de26-472c-ae18-5879559d6cdc)
 ![image](https://github.com/logcossin/ForReport/assets/49052882/81673fa7-44b0-4991-9a1c-f58b85058a3a)
 
-* Example of fragmented NAD(P)H-hydrate dehydratase in *L. fermentum* KMB_613
+* Example of fragmented NAD(P)H-hydrate dehydratase in *L. fermentum* KMB_613. Arrows indicate the end of each contig.
 * The gene is located and separted into two contigs.
 
 ----
 * Dihydrofolate reductase is analyzed fragmented in most of the *L. fermentum* genomes.
 * The average length of genes analzyed as complete (166.6 aa) or fragmented (166.8 aa) is almost the same.
-* BUSCO marker gene completeness is assessed by HMM profile align scores and length, if found to be fragmented, the BUSCO matches have proper scores but not the alignment lengths to the BUSCO profile.
-* The average alignment length of genes analzyed as complete (75.4 aa) is higher than fragmented (59.0 aa).
+* BUSCO marker gene completeness is assessed by HMM profile align scores and length and if found to be fragmented, the BUSCO matches have proper scores but not the alignment lengths to the BUSCO profile.
+* The average alignment length of genes analzyed as complete (75.4 aa) was higher than fragmented (59.0 aa).
 
 ----
 * Glucose-6-phosphate isomerase is analyzed fragmented in 21 genomes and missing in 15 genomes.
-* The average length of genes analzyed as complete (427.7 aa) is higher than fragmented (303.1 aa).
-* All fragmented genes from 21 genomes are located at the edge of the contigm, leading to truncated sequences.
-* Genomes analyzed as missing gene have gene sequences truncated near the middle or on both ends (too short), the [PGAP](https://github.com/ncbi/pgap) defined them as pseudogenes.
+* The average length of genes analzyed as complete (427.7 aa) was higher than fragmented (303.1 aa).
+* All fragmented genes from 21 genomes were located at the edge of the contigm, leading to truncated sequences.
+* Genomes analyzed as missing gene had gene sequences truncated near the middle or on both ends (too short), the [PGAP](https://github.com/ncbi/pgap) defined them as pseudogenes.
 
 ## Automatic detection of incomplete BUSCO genes in the genome
 
