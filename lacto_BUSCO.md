@@ -19,7 +19,7 @@ Contain More than 2 | 8 | 41
 # Incomplete BUSCO gene analysis
 
 * Genomes with BUSCO completeness over 98% (bacteria) or 99% (lactobacillales) were filtered for further analysis
-* Bacteria (105 genomes, 53 genes), Lactobacillales (148 genomes, 190 genes)
+* Bacteria (160 genomes, 53 genes), Lactobacillales (148 genomes, 190 genes)
 
 ## Bacteria lineage
 
@@ -29,6 +29,14 @@ Gene | Incomplete genomes
 ---- | ----
 Ribosomal protein L35 (2046660at2) | 160
 Chorismate synthase (981870at2) | 39
+
+----
+* Ribosomal protein L35 was fragmented in every 160 genomes analyzed
+* The length of *L. fermentum* genes (65 aa) is the same as median bacterial gene length in [OrthoDB](https://v10-1.orthodb.org/?query=2046660at2).
+* The profile alignment length of genes (22 aa) is below the threshold (33 aa) to be defined as complete.
+
+----
+* Chorismate synthase is analyzed missing in 39 genomes.
 
 ## Lactobacillales lineage
 
@@ -42,8 +50,8 @@ Glucose-6-phosphate isomerase (7599at186826) | 36
 
 ----
 * ADP-dependent (S)-NAD(P)H-hydrate dehydratase is incomplete in strains SRCM103285 (GCF_004063515.1), KMB_612 (GCF_003346325.1), KMB_613 (GCF_003346315.1)
-1. The gene is defined as pseudogene because of partial gene sequence and missing C-terminus in SRCM103285
-2. The genes are 193 and 195 aa in KMB_612 and KMB_613, respectively. Which is much shorter than median protein length (280 aa).
+1. The gene is defined as pseudogene because of partial gene sequence and missing C-terminus in strain SRCM103285
+2. The genes are 193 and 195 aa in strain KMB_612 and KMB_613, respectively. Which is much shorter than median protein length (280 aa).
 
 ![image](https://github.com/logcossin/ForReport/assets/49052882/b33e8895-de26-472c-ae18-5879559d6cdc)
 ![image](https://github.com/logcossin/ForReport/assets/49052882/81673fa7-44b0-4991-9a1c-f58b85058a3a)
