@@ -90,8 +90,17 @@ Glucose-6-phosphate isomerase (7599at186826) | 36
 5. Genome misassembly
 
 * BUSCO lineage dataset provides consensus ancestral sequences for marker genes. [#](https://busco.ezlab.org/busco_userguide.html#lineage-datasets)
-* TBLASTN (protein to translated nucleotide) search could be used to identify gene fragments in the genome sequence
-* Comparing the length of fragmented and complete gene could be used for 4.
+* TBLASTN (protein to translated nucleotide) search with the consensus sequence as query could be used to identify gene fragments in the genome sequence.
+
+TBLASTN Hit | Result
+---- | ----
+Multiple hits in the region side by side | Gene trucation
+Hit at the end of contigs | Gene located at the edge of the contig
+No hit | Gene deletion
+Multiple hits from regions at different contigs (edge X) | Genome misassembly
+
+* The genomic region with match could be analyzed to find the reason of incomplete marker genes.
+* Comparing the length of fragmented and complete genes could be used to identify whether the fragmented gene is actually trucated or it is due to short BUSCO HMM model alignment length.
 
 # ANI analysis
 
