@@ -82,7 +82,11 @@ Glucose-6-phosphate isomerase (7599at186826) | 36
 
 ## Automatic detection of incomplete BUSCO genes in the genome
 
-* 
+1. Gene truncation by mutation
+2. Gene located at the edge of the contig
+3. Gene deletion
+
+* TBLASTN (protein to translated nucleotide) search
 
 # ANI analysis
 
