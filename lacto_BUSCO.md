@@ -14,11 +14,11 @@ Contain More than 2 | 8 | 41
 
 * Fully Complete: all analyzed genomes have complete BUSCO gene
 * Contain XXX: at least one genome have XXX BUSCO gene
-* Contain More than 2: more than 2 defect BUSCO gene statuses were found in genomes
+* Contain More than 2: more than 2 defect BUSCO gene statuses were found to that marker gene
 
 # Incomplete BUSCO gene analysis
 
-* Genomes with BUSCO completeness over 98% (bacteria) or 99% (lactobacillales) were filtered for further analysis
+* Genomes with BUSCO completeness over 98% (bacteria) and 99% (lactobacillales) were sampled for further analysis
 * Bacteria (160 genomes, 53 genes), Lactobacillales (148 genomes, 190 genes)
 
 ## Bacteria lineage
@@ -33,6 +33,7 @@ Chorismate synthase (981870at2) | 39
 ----
 * Ribosomal protein L35 was fragmented in every 160 genomes analyzed
 * The length of *L. fermentum* genes (65 aa) is the same as median bacterial gene length in [OrthoDB](https://v10-1.orthodb.org/?query=2046660at2).
+* BUSCO marker gene completeness is assessed by HMM profile align scores and length and if found to be fragmented, the BUSCO matches have proper scores but not the alignment lengths to the BUSCO profile.
 * The profile alignment length of genes (22 aa) is below the threshold (33 aa) to be defined as complete.
 
 ----
@@ -71,7 +72,6 @@ Glucose-6-phosphate isomerase (7599at186826) | 36
 ----
 * Dihydrofolate reductase is analyzed fragmented in most of the *L. fermentum* genomes.
 * The average length of genes analzyed as complete (166.6 aa) or fragmented (166.8 aa) is almost the same.
-* BUSCO marker gene completeness is assessed by HMM profile align scores and length and if found to be fragmented, the BUSCO matches have proper scores but not the alignment lengths to the BUSCO profile.
 * The average alignment length of genes analzyed as complete (75.4 aa) was higher than fragmented (59.0 aa).
 
 ----
