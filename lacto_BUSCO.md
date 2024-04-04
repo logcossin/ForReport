@@ -23,7 +23,7 @@ Contain More than 2 | 8 | 41
 
 ## Bacteria lineage
 
-* 2 genes were analyzed as incomplete (Fragmented + Missing) in more than 2% of the 105 genomes
+* 2 genes were analyzed as incomplete (Fragmented + Missing) in more than 2% of the 160 genomes
 
 Gene | Incomplete genomes
 ---- | ----
