@@ -36,7 +36,16 @@ Chorismate synthase (981870at2) | 39
 * The profile alignment length of genes (22 aa) is below the threshold (33 aa) to be defined as complete.
 
 ----
-* Chorismate synthase is analyzed missing in 39 genomes.
+* Chorismate synthase (aroC) is analyzed missing in 39 genomes.
+* All 39 genomes have the chorismate synthase pseudogene in result of frameshift, nonsense mutation.
+
+![image](https://github.com/logcossin/ForReport/assets/49052882/392fcd0e-4b04-471c-aee9-362f6c10c3d8)
+
+* Example of framshifted aroC gene in *L. fermentum* 779_LFER (GCF_001077025.1)
+
+![image](https://github.com/logcossin/ForReport/assets/49052882/2af3aadd-18a4-497f-88da-40b2a2401214)
+
+* Example of aroC gene in *L. fermentum* AF15-40LB (GCF_003464285.1) with internal stop codon
 
 ## Lactobacillales lineage
 
