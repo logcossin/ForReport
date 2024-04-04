@@ -39,7 +39,8 @@ Glucose-6-phosphate isomerase (7599at186826) | 36
 ![image](https://github.com/logcossin/ForReport/assets/49052882/b33e8895-de26-472c-ae18-5879559d6cdc)
 ![image](https://github.com/logcossin/ForReport/assets/49052882/81673fa7-44b0-4991-9a1c-f58b85058a3a)
 
-The gene is located and separted into two contigs. Both genomes are consisted of more than 100 contigs.
+* Example of fragmented NAD(P)H-hydrate dehydratase in *L. fermentum* KMB_613
+* The gene is located and separted into two contigs.
 
 ----
 * Dihydrofolate reductase is analyzed fragmented in most of the *L. fermentum* genomes.
