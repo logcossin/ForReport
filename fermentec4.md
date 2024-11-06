@@ -26,4 +26,5 @@ Genome completeness | 99.38% | 99.38% | 99.38%
 * Antibacterial resistance gene analysis was performed by [staramr v0.10.0](https://github.com/phac-nml/staramr).
 ----
 
-* No virulence factor or antibacterial resistance gene was found in all 3 strains.
+* No virulence factor was found in all 3 strains.
+* *clpL* heat resistance gene was found in all 3 strains.
