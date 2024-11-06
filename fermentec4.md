@@ -1,13 +1,14 @@
 ## Summary of the ONT sequencing
 
-Feature | LAB60668 | LAB69 | LAB17
+Feature | LAB60303 | LAB60832 | LAB60335
 ---- | ---- | ---- | ----
-Number of reads | 920,512 | 300,135 | 177,829
-Total bases (Mbp) | 3,017.0 | 1,850.0 | 1,115.5
-Mean read length (bp) | 3,277.6 | 6,163.8 | 6,272.7
-Mean read quality | 17.9 | 17.5 | 17.4
+Number of reads | 21,159 | 34,958 | 27,255
+Total bases (Mbp) | 152.7 | 232.3 | 191.8
+Mean read length (bp) | 7,214 | 6,644 | 7,036
+Mean read quality | 20.9 | 21.0 | 21.9
+Read length N50 (bp) | 19,958 | 19,387 | 17,933
 
-## Summary of the genome assembly and annotation
+## Summary of the genome assembly
 
 Feature | LAB60668 | LAB69 | LAB17
 ---- | ---- | ---- | ----
