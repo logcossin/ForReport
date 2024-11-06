@@ -14,11 +14,14 @@ Feature | LAB60303 | LAB60832 | LAB60335
 ---- | ---- | ---- | ----
 Total length (bp) | 3,273,067 | 3,276,866 | 3,273,110
 Contig number | 3 | 4 | 3
+N50 (bp) | 3,207,516 | 3,207,643 | 3,207,518
+L50 | 1 | 1 | 1
+GC ratio (%) | 44.52 | 44.52 | 44.52
 Predicetd species | _L. plantarum_ | _L. plantarum_ | _L. plantarum_
 Genome completeness | 99.38% | 99.38% | 99.38%
 
 * All 3 strains assembled into one complete circular chromosome and plasmids with over 99% genome completeness ([CheckM v1.2.3](https://github.com/Ecogenomics/CheckM)).
-* Species was predicted with ANI analysis.
+* Species was predicted with ANI analysis. (>99% ANI with *L. plantarum* reference genome GCF_009913655.1)
 
 ## Virulence factor / Antibacterial resistance gene analysis
 
