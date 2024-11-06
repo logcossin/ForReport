@@ -10,22 +10,20 @@ Read length N50 (bp) | 19,958 | 19,387 | 17,933
 
 ## Summary of the genome assembly
 
-Feature | LAB60668 | LAB69 | LAB17
+Feature | LAB60303 | LAB60832 | LAB60335
 ---- | ---- | ---- | ----
-Total length (bp) | 2,048,909 | 2,077,559 | 2,077,645
-Contig number | 1 | 1 | 1
-Predicetd species | _L. reuteri_ | _L. fermentum_ | _L. fermentum_
-Genome completeness | 99.7% | 99.7% | 99.7%
+Total length (bp) | 3,273,067 | 3,276,866 | 3,273,110
+Contig number | 3 | 4 | 3
+Predicetd species | _L. plantarum_ | _L. plantarum_ | _L. plantarum_
+Genome completeness | 99.38% | 99.38% | 99.38%
 
-* All 3 strains assembled into one complete circular genome with over 99% genome completeness ([BUSCO v5.4.6](https://busco.ezlab.org/) lactobacillales_odb10 dataset, protein mode).
+* All 3 strains assembled into one complete circular chromosome and plasmids with over 99% genome completeness ([CheckM v1.2.3](https://github.com/Ecogenomics/CheckM)).
 * Species was predicted with ANI analysis.
-
-![image](https://github.com/logcossin/ForReport/assets/49052882/c4129b75-5675-4a01-8316-1288fa7391e5)
 
 ## Virulence factor / Antibacterial resistance gene analysis
 
-* Virulence factor analysis was performed by [VirulenceFinder v2.0.3](https://cge.food.dtu.dk/services/VirulenceFinder/) with all species selected.
-* Antibacterial resistance gene analysis was performed by [ResFinder v4.4.1](http://genepi.food.dtu.dk/resfinder) with default parameters.
+* Virulence factor analysis was performed by [ABRicate v1.0.1](https://github.com/tseemann/abricate).
+* Antibacterial resistance gene analysis was performed by [staramr v0.10.0](https://github.com/phac-nml/staramr).
 ----
 
 * No virulence factor or antibacterial resistance gene was found in all 3 strains.
